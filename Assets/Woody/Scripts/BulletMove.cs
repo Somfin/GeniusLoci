@@ -2,7 +2,11 @@
 using System.Collections;
 
 public class BulletMove : MonoBehaviour {
-	public float MovementSpeed;
+	public float movementSpeed;
+	public float rangeLimit;
+
+	private Vector3 move;
+	private float distance;
 
 	// Use this for initialization
 	void Start () {
@@ -15,6 +19,11 @@ public class BulletMove : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
-		transform.Translate (Vector3.forward * MovementSpeed);
+		move = Vector3.forward * movementSpeed;
+		transform.Translate (move);
+		distance += move.magnitude;
+		if (distance > rangeLimit) {
+			GameObject.Destroy (gameObject);
+		}
 	}
 }
