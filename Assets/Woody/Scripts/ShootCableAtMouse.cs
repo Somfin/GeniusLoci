@@ -37,6 +37,7 @@ public class ShootCableAtMouse : MonoBehaviour {
 		if (firing && !fired) {
 			fired = true;
 			GameObject newBullet = GameObject.Instantiate (bullet, transform.position, transform.rotation) as GameObject;
+			newBullet.name = "Active Spark";
 			currentBullet = newBullet;
 		}
 	}
