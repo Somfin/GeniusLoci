@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ShootAtMouse : MonoBehaviour {
+public class ShootCableAtMouse : MonoBehaviour {
 	public GameObject bullet;
+	public GameObject cable;
 	private bool firing;
 	private bool fired;
 	private GameObject currentBullet;
@@ -22,6 +23,9 @@ public class ShootAtMouse : MonoBehaviour {
 		} else {
 			firing = false;
 			fired = false;
+		}
+		if (currentBullet != null){
+			Debug.DrawLine (gameObject.transform.position, currentBullet.transform.position, Color.black);
 		}
 	}
 
