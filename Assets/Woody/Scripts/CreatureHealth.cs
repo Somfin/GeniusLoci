@@ -13,7 +13,7 @@ public class CreatureHealth : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 
 	public void takeDamage (int damage) {
@@ -21,5 +21,9 @@ public class CreatureHealth : MonoBehaviour {
 		if (currentHealth <= 0) {
 			GameObject.Destroy (gameObject);
 		}
+	}
+
+	void OnGui(){
+
 	}
 }
