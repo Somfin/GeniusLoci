@@ -17,7 +17,7 @@ public class BulletCollide : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if (other.tag == "Enemy") {
 			GameObject.Instantiate (bang, gameObject.transform.position, gameObject.transform.rotation);
-			Destroy (other.gameObject);
+			other.GetComponent<CreatureHealth>().takeDamage(1);
 			Destroy (gameObject);
 		}
 	}
