@@ -31,7 +31,7 @@ public class ShootCableAtMouse : MonoBehaviour {
 
 	void FixedUpdate () {
 		if (firing && !fired && currentBullet != null) {
-			GameObject.Destroy (currentBullet);
+			currentBullet.GetComponent<BulletKill>().die ();
 			currentBullet = null;
 		}
 		if (firing && !fired) {

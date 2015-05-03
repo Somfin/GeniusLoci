@@ -23,7 +23,7 @@ public class BulletMove : MonoBehaviour {
 		transform.Translate (move);
 		distance += move.magnitude;
 		if (distance > rangeLimit) {
-			GameObject.Destroy (gameObject);
+			GetComponent<BulletKill>().die();
 		}
 	}
 }
