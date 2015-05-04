@@ -8,15 +8,16 @@ public class NewCameraController : MonoBehaviour {
 	public float distanceAway;
 	public float distanceUp;
 	public float smooth;
-	private Transform followXForm;
-	private Vector3 targetPosition;
-
-	private Vector3 lookDir;
 	public Vector3 offset = new Vector3(0f, 1.5f, 0f);
 
 	//smoothing and damping
 	public Vector3 velocityCamSmooth = Vector3.zero;
 	public float camSmoothDampTime = 0.1f;
+
+	private Transform followXForm;
+	private Vector3 targetPosition;
+	private Vector3 lookDir;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -37,13 +38,14 @@ public class NewCameraController : MonoBehaviour {
 		lookDir.Normalize();
 
 		targetPosition = characterOffset + followXForm.up * distanceUp - lookDir * distanceAway;
+
+
+
 		smoothPosition (this.transform.position, targetPosition);
-
-
-
 	
 
 		//Makes sure is looking the right way
+
 		transform.LookAt (followXForm);
 
 	}

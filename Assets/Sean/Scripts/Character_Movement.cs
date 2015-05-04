@@ -60,15 +60,15 @@ public class Character_Movement : MonoBehaviour {
 
 		StickToWorldSpace (this.transform, gameCam.transform, ref direction, ref speed);
 
-		if(Input.GetKeyDown(KeyCode.Space)){
-			isRunning = !isRunning;
-		}
-		if (v < .5){
+		if(Input.GetAxisRaw("Run") == 1){
 			isRunning = false;
+		}
+		else {
+			isRunning = true;
 		}
 		anim.SetBool ("isRunning", isRunning);
 
-		if (Input.GetKeyDown (KeyCode.J) && controller.isGrounded)
+		if (Input.GetAxisRaw ("Jump") == 1 && controller.isGrounded)
 			jumpStarting = true;
 		else
 			jumpStarting = false;

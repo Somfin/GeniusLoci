@@ -3,9 +3,11 @@ using System.Collections;
 
 public class RotateToMouse : MonoBehaviour {
 	public float horizTurn;
-	public float vertTurn;
+	public float vertMove;
 
 	private bool clicked;
+	private Vector3 rotX;
+	private Vector3 rotY;
 
 	// Use this for initialization
 	void Start () {
@@ -15,7 +17,11 @@ public class RotateToMouse : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		float x = horizTurn * Input.GetAxis ("Mouse X");
-		transform.Rotate (0, x, 0);
+		float y = -vertMove * Input.GetAxis ("Mouse Y");
+		rotX = new Vector3(0, x, 0);
+		rotY = new Vector3(0, y, 0);
+		transform.Rotate (rotX);
+		transform.Translate (rotY);
 		if (Input.GetAxisRaw ("Fire2") == 1){
 			transform.rotation = transform.parent.rotation;
 		}
