@@ -4,10 +4,13 @@ using System.Collections;
 public class RotateToMouse : MonoBehaviour {
 	public float horizTurn;
 	public float vertMove;
+	public float miny;
+	public float maxy;
 
 	private bool clicked;
-	private Vector3 rotX;
+	private Vector3 moveTo;
 	private Vector3 rotY;
+	private Vector3 movY;
 
 	// Use this for initialization
 	void Start () {
@@ -18,10 +21,19 @@ public class RotateToMouse : MonoBehaviour {
 	void Update () {
 		float x = horizTurn * Input.GetAxis ("Mouse X");
 		float y = -vertMove * Input.GetAxis ("Mouse Y");
-		rotX = new Vector3(0, x, 0);
-		rotY = new Vector3(0, y, 0);
-		transform.Rotate (rotX);
-		transform.Translate (rotY);
+		movY = new Vector3(0, y, 0);
+		rotY = new Vector3(0, x, 0);
+		moveTo = transform.position + movY;
+		if (moveTo.y > maxy) {
+			moveTo = new Vector3 (moveTo.x, maxy, moveTo.z);
+		} else if (moveTo.y < miny){
+			moveTo = new Vector3 (moveTo.x, miny, moveTo.z);
+		}
+
+		transform.position = moveTo;
+		transform.Rotate (rotY);
+
+
 		if (Input.GetAxisRaw ("Fire2") == 1){
 			transform.rotation = transform.parent.rotation;
 		}

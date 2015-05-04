@@ -4,10 +4,10 @@ using System.Collections;
 public class ShootCableAtMouse : MonoBehaviour {
 	public GameObject bullet;
 	public GameObject cable;
+	public GameObject backBlast;
 	private bool firing;
 	private bool fired;
 	private GameObject currentBullet;
-
 
 	// Use this for initialization
 	void Start () {
@@ -38,6 +38,8 @@ public class ShootCableAtMouse : MonoBehaviour {
 			fired = true;
 			GameObject newBullet = GameObject.Instantiate (bullet, transform.position, transform.rotation) as GameObject;
 			newBullet.name = "Active Spark";
+			GameObject blast = GameObject.Instantiate (backBlast, transform.position, transform.rotation) as GameObject;
+			Destroy (blast, 2.0f);
 			currentBullet = newBullet;
 		}
 	}
