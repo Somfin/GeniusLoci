@@ -6,6 +6,7 @@ public class RotateToMouse : MonoBehaviour {
 	public float vertMove;
 	public float miny;
 	public float maxy;
+	public GameObject anchor;
 
 	private bool clicked;
 	private Vector3 moveTo;
@@ -23,27 +24,14 @@ public class RotateToMouse : MonoBehaviour {
 		float y = -vertMove * Input.GetAxis ("Mouse Y");
 		movY = new Vector3(0, y, 0);
 		rotY = new Vector3(0, x, 0);
-		moveTo = transform.position + movY;
+		moveTo = anchor.transform.position + movY;
 		if (moveTo.y > maxy) {
 			moveTo = new Vector3 (moveTo.x, maxy, moveTo.z);
 		} else if (moveTo.y < miny){
 			moveTo = new Vector3 (moveTo.x, miny, moveTo.z);
 		}
 
-		transform.position = moveTo;
+		anchor.transform.position = moveTo;
 		transform.Rotate (rotY);
-
-
-		if (Input.GetAxisRaw ("Fire2") == 1){
-			transform.rotation = transform.parent.rotation;
-		}
-		if (Input.GetAxisRaw ("Fire1") == 1) {
-			transform.parent.rotation = transform.rotation;
-			transform.rotation = transform.parent.rotation;
-			clicked = true;
-		}
-		if (Input.GetAxisRaw ("Fire1") == 0 && clicked) {
-			clicked = false;
-		}
 	}
 }

@@ -3,11 +3,9 @@ using System.Collections;
 
 public class PlayerMover : MonoBehaviour {
 	public float moveRate;
-	public float turnRate;
 
 	private Vector3 stick;
 	private Vector3 move;
-	private Vector3 rotate;
 	private float stickX;
 	private float stickY;
 
@@ -24,21 +22,14 @@ public class PlayerMover : MonoBehaviour {
 	}
 
 	void FixedUpdate (){
-		stick.Set (stickX * 2, stickY, 0);
+		stick.Set (stickX, 0f, stickY);
 		stick = stick.normalized;
-		Turn (stick.x);
-		Move (stick.y);
+		Move (stick.x, stick.z);
 	}
 
-	void Move (float v){
-		move.Set (0f, 0f, v);
+	void Move (float h, float v){
+		move.Set (h, 0f, v);
 		move = move.normalized * moveRate * Time.deltaTime;
 		transform.Translate (move);
-	}
-
-	void Turn (float h){
-		rotate.Set (0f, h, 0f);
-		rotate = rotate.normalized * turnRate * Time.deltaTime;
-		transform.Rotate (rotate);
 	}
 }
