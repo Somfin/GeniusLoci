@@ -3,14 +3,15 @@ using System.Collections;
 
 public class BulletMove : MonoBehaviour {
 	public float movementSpeed;
-	public float rangeLimit;
+	public float lifeSpan;
 
+	private Rigidbody body;
 	private Vector3 move;
-	private float distance;
+	private float life;
 
 	// Use this for initialization
 	void Start () {
-	
+		body = GetComponent<Rigidbody> ();
 	}
 	
 	// Update is called once per frame
@@ -19,10 +20,8 @@ public class BulletMove : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
-		move = Vector3.forward * movementSpeed;
-		transform.Translate (move);
-		distance += move.magnitude;
-		if (distance > rangeLimit) {
+		life += Time.deltaTime;
+		if (life > lifeSpan) {
 			GetComponent<BulletKill>().die();
 		}
 	}

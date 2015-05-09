@@ -17,7 +17,7 @@ public class BulletKill : MonoBehaviour {
 
 	public void die(){
 		Destroy (gameObject, 1.0f);
-		GetComponent<BulletMove> ().movementSpeed = 0;
+		GetComponent<Rigidbody> ().velocity = Vector3.zero;
 		GetComponent<Light> ().enabled = false;
 		GetComponent<BulletCollide> ().enabled = false;
 		Destroy (bullet);

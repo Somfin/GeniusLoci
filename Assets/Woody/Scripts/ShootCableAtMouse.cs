@@ -5,6 +5,13 @@ public class ShootCableAtMouse : MonoBehaviour {
 	public GameObject bullet;
 	public GameObject cable;
 	public GameObject backBlast;
+	public float shotSpeed;
+	public float shotDelay;
+	public float shotCooldown;
+	
+	private float currentCooldown;
+	private float currentDelay;
+	private bool trigger;
 	private bool firing;
 	private bool fired;
 	private GameObject currentBullet;
@@ -19,10 +26,22 @@ public class ShootCableAtMouse : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetAxisRaw ("Fire1") == 1) {
-			firing = true;
-		} else {
-			firing = false;
-			fired = false;
+			trigger = true;
+		} 
+		if (trigger && currentCooldown == 0) {
+			currentDelay += Time.deltaTime;
+			if (currentDelay > shotDelay){
+				trigger = false;
+				firing = true;
+				currentDelay = 0;
+			}
+		}
+		if (fired) {
+			currentCooldown += Time.deltaTime;
+			if (currentCooldown > shotCooldown){
+				fired = false;
+				currentCooldown = 0;
+			}
 		}
 		if (currentBullet != null){
 			Debug.DrawLine (gameObject.transform.position, currentBullet.transform.position, Color.black);
@@ -35,12 +54,17 @@ public class ShootCableAtMouse : MonoBehaviour {
 			currentBullet = null;
 		}
 		if (firing && !fired) {
+			firing = false;
 			fired = true;
-			GameObject newBullet = GameObject.Instantiate (bullet, transform.position, transform.rotation) as GameObject;
-			newBullet.name = "Active Spark";
 			GameObject blast = GameObject.Instantiate (backBlast, transform.position, transform.rotation) as GameObject;
 			Destroy (blast, 2.0f);
+
+			GameObject newBullet = GameObject.Instantiate (bullet, transform.position, transform.rotation) as GameObject;
 			currentBullet = newBullet;
+			Physics.IgnoreCollision (GetComponent<Collider>(), currentBullet.GetComponent<Collider>());
+			currentBullet.GetComponent<BulletCollide>().setCreator(gameObject);
+			currentBullet.GetComponent<Rigidbody>().AddForce (this.transform.forward * shotSpeed);
+			currentBullet.name = "Active Spark";
 		}
 	}
 
@@ -49,8 +73,10 @@ public class ShootCableAtMouse : MonoBehaviour {
 			GUI.Label (new Rect (0, 0, Screen.width, Screen.height), "...");
 		} else if (firing) {
 			GUI.Label (new Rect (0, 0, Screen.width, Screen.height), "BANG!");
-		} else {
+		} else if (trigger) {
 			GUI.Label (new Rect (0, 0, Screen.width, Screen.height), "Wait for it...");
+		} else {
+			GUI.Label (new Rect (0, 0, Screen.width, Screen.height), "Ready to fire.");
 		}
 	}
 }
