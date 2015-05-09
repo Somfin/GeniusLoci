@@ -4,6 +4,7 @@ using System.Collections;
 public class CameraControl : MonoBehaviour {
 	public GameObject lookTarget;
 	public GameObject anchor;
+	public float snappiness;
 
 	// Use this for initialization
 	void Start () {
@@ -11,8 +12,8 @@ public class CameraControl : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		this.transform.position = (anchor.transform.position);
+	void FixedUpdate () {
+		this.transform.position -= (transform.position - anchor.transform.position) * snappiness;
 		this.transform.LookAt (lookTarget.transform);
 	}
 }
