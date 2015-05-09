@@ -15,11 +15,13 @@ public class PlayerMover : MonoBehaviour {
 	public bool jumpHold;
 	public bool jumping;
 	private float jumpTime;
+	private Rigidbody body;
 
 	// Use this for initialization
 	void Start () {
 		stickX = 0f;
 		stickY = 0f;
+		body = GetComponent<Rigidbody> ();
 	}
 	
 	// Update is called once per frame
@@ -38,15 +40,18 @@ public class PlayerMover : MonoBehaviour {
 	void Move (float h, float v){
 		move.Set (h, 0f, v);
 		move = move.normalized * moveRate * Time.deltaTime;
+		body.useGravity = true;
 		if (jumpAttempt && !jumping) {
 			jumping = true;
 			jumpHold = true;
 		}
 		if (!jumpAttempt) {
+			body.useGravity = true;
 			jumpHold = false;
 			jumpTime = 0;
 		}
 		if (jumpHold && jumpTime < maxJumpTime) {
+			body.useGravity = false;
 			jumpTime += Time.deltaTime;
 			move.Set (move.x, jumpRate * Time.deltaTime, move.z);
 		}
