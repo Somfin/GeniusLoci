@@ -4,7 +4,9 @@ using System.Collections;
 public class CameraControl : MonoBehaviour {
 	public GameObject lookTarget;
 	public GameObject anchor;
+	public GameObject player;
 	public float snappiness;
+
 	private Vector3 target;
 
 	// Use this for initialization
@@ -18,6 +20,7 @@ public class CameraControl : MonoBehaviour {
 		this.transform.position -= (transform.position - anchor.transform.position) * snappiness;
 		this.transform.LookAt (target);
 		Debug.DrawLine (this.transform.position, target);
+		Debug.DrawLine (this.transform.position, player.transform.position);
 		Debug.DrawRay (lookTarget.transform.position, Vector3.up);
 		Debug.DrawRay (target, Vector3.forward);
 	}
