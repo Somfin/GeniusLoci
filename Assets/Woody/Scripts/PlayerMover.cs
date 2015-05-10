@@ -71,4 +71,11 @@ public class PlayerMover : MonoBehaviour {
 			jumpTime = 0;
 		}
 	}
+
+	void OnCollisionExit(Collision collision){
+		if (collision.collider.tag == "World") {
+			jumping = true;
+			jumpTime = 0;
+		}
+	}
 }
