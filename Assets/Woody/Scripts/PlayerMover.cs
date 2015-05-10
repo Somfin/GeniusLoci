@@ -61,20 +61,10 @@ public class PlayerMover : MonoBehaviour {
 		transform.Translate (move);
 	}
 
-	void OnCollisionEnter(Collision collision){
-		if (collision.collider.tag == "World") {
-			jumping = false;
-			jumpTime = 0;
-			currentJump = jumpRate;
-		}
-	}
-
-	void OnCollisionStay(Collision collision){
-		if (collision.collider.tag == "World") {
-			jumping = false;
-			jumpTime = 0;
-			currentJump = jumpRate;
-		}
+	public void resetJump(){
+		jumping = false;
+		jumpTime = 0;
+		currentJump = jumpRate;
 	}
 
 	void OnCollisionExit(Collision collision){
