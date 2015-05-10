@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerMover : MonoBehaviour {
 	public float moveRate;
 	public float jumpRate;
-	public float maxJumpTime;
+	public float jumpDecay;
 
 	private Vector3 stick;
 	private Vector3 move;
@@ -15,6 +15,7 @@ public class PlayerMover : MonoBehaviour {
 	public bool jumpHold;
 	public bool jumping;
 	private float jumpTime;
+	public float currentJump;
 	private Rigidbody body;
 
 	// Use this for initialization
@@ -22,6 +23,7 @@ public class PlayerMover : MonoBehaviour {
 		stickX = 0f;
 		stickY = 0f;
 		body = GetComponent<Rigidbody> ();
+		currentJump = jumpRate;
 	}
 	
 	// Update is called once per frame
@@ -50,10 +52,11 @@ public class PlayerMover : MonoBehaviour {
 			jumpHold = false;
 			jumpTime = 0;
 		}
-		if (jumpHold && jumpTime < maxJumpTime) {
+		if (jumpHold && currentJump > 1) {
 			body.useGravity = false;
 			jumpTime += Time.deltaTime;
-			move.Set (move.x, jumpRate * Time.deltaTime, move.z);
+			move.Set (move.x, currentJump * Time.deltaTime, move.z);
+			currentJump -= (currentJump * jumpDecay * Time.deltaTime);
 		}
 		transform.Translate (move);
 	}
@@ -62,6 +65,7 @@ public class PlayerMover : MonoBehaviour {
 		if (collision.collider.tag == "World") {
 			jumping = false;
 			jumpTime = 0;
+			currentJump = jumpRate;
 		}
 	}
 
@@ -69,6 +73,7 @@ public class PlayerMover : MonoBehaviour {
 		if (collision.collider.tag == "World") {
 			jumping = false;
 			jumpTime = 0;
+			currentJump = jumpRate;
 		}
 	}
 
