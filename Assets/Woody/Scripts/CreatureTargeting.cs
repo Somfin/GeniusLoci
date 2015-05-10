@@ -13,6 +13,8 @@ public class CreatureTargeting : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		agent.SetDestination (target.transform.position);
+		if (Vector3.Distance (transform.position, target.transform.position) < 40f) {
+			agent.SetDestination (target.transform.position);
+		}
 	}
 }

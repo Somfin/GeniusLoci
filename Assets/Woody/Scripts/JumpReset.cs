@@ -19,4 +19,10 @@ public class JumpReset : MonoBehaviour {
 			mover.resetJump();
 		}
 	}
+
+	void OnTriggerStay(Collider collide){
+		if (collide.tag == "World") {
+			mover.resetJump();
+		}
+	}
 }
