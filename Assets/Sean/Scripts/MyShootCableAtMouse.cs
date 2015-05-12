@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ShootCableAtMouse : MonoBehaviour {
+public class MyShootCableAtMouse : MonoBehaviour {
+
 	public GameObject bullet;
 	public GameObject cable;
 	public GameObject backBlast;
@@ -15,7 +16,7 @@ public class ShootCableAtMouse : MonoBehaviour {
 	private bool firing;
 	private bool fired;
 	private GameObject currentBullet;
-
+	
 	// Use this for initialization
 	void Start () {
 		firing = false;
@@ -47,10 +48,10 @@ public class ShootCableAtMouse : MonoBehaviour {
 			Debug.DrawLine (gameObject.transform.position, currentBullet.transform.position, Color.black);
 		}
 	}
-
+	
 	void FixedUpdate () {
 		if (firing && !fired && currentBullet != null) {
-			currentBullet.GetComponent<BulletKill>().die ();
+			currentBullet.GetComponent<MyBulletKill>().die ();
 			currentBullet = null;
 		}
 		if (firing && !fired) {
@@ -58,18 +59,19 @@ public class ShootCableAtMouse : MonoBehaviour {
 			fired = true;
 			GameObject blast = GameObject.Instantiate (backBlast, transform.position, transform.rotation) as GameObject;
 			Destroy (blast, 2.0f);
-
+			
 			GameObject newBullet = GameObject.Instantiate (bullet, transform.position, transform.rotation) as GameObject;
 			currentBullet = newBullet;
 			Physics.IgnoreCollision (GetComponent<Collider>(), currentBullet.GetComponent<Collider>());
 
-			currentBullet.GetComponent<BulletCollide>().setCreator(gameObject);
-
+			currentBullet.GetComponent<MyBulletCollide>().setCreator(gameObject);
+			
+			
 			currentBullet.GetComponent<Rigidbody>().AddForce (this.transform.forward * shotSpeed);
 			currentBullet.name = "Active Spark";
 		}
 	}
-
+	
 	void OnGUI() {
 		if (fired) {
 			GUI.Label (new Rect (0, 0, Screen.width, Screen.height), "...");
