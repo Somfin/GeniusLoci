@@ -11,9 +11,9 @@ public class PlayerMover : MonoBehaviour {
 	private float stickX;
 	private float stickY;
 	private float jump;
-	public bool jumpAttempt;
-	public bool jumpHold;
-	public bool jumping;
+	public bool jumped;			// Whether or not I have started jumping
+	public bool jumping;		// Whether or not I am currently jumping
+	public bool jumpHold;		// Whether or not I am currently holding down the jump button
 	private float jumpTime;
 	public float currentJump;
 	private Rigidbody body;
@@ -30,7 +30,7 @@ public class PlayerMover : MonoBehaviour {
 	void Update () {
 		stickX = Input.GetAxisRaw ("Horizontal");
 		stickY = Input.GetAxisRaw ("Vertical");
-		jumpAttempt = Input.GetAxisRaw ("Jump") == 1;
+		jumpHold = Input.GetAxisRaw ("Jump") == 1;
 	}
 
 	void FixedUpdate (){
@@ -43,16 +43,16 @@ public class PlayerMover : MonoBehaviour {
 		move.Set (h, 0f, v);
 		move = move.normalized * moveRate * Time.deltaTime;
 		body.useGravity = true;
-		if (jumpAttempt && !jumping) {
+		if (jumpHold && !jumping && !jumped) {
 			jumping = true;
-			jumpHold = true;
 		}
-		if (!jumpAttempt) {
+		if (!jumpHold) {
 			body.useGravity = true;
-			jumpHold = false;
+			jumped = false;
 			jumpTime = 0;
 		}
 		if (jumpHold && currentJump > 1) {
+			jumped = true;
 			body.useGravity = false;
 			jumpTime += Time.deltaTime;
 			move.Set (move.x, currentJump * Time.deltaTime, move.z);
@@ -63,8 +63,10 @@ public class PlayerMover : MonoBehaviour {
 
 	public void resetJump(){
 		jumping = false;
-		jumpTime = 0;
-		currentJump = jumpRate;
+		if (!jumpHold) {
+			jumpTime = 0;
+			currentJump = jumpRate;
+		}
 	}
 
 	void OnCollisionExit(Collision collision){
