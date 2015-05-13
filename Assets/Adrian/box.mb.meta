@@ -1,0 +1,136 @@
+fileFormatVersion: 2
+guid: cfab296e444b54749b858beba8724b3b
+timeCreated: 1431505226
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: left
+    100004: pCube1
+    100006: pCube3
+    100008: pCube4
+    100010: polySurface1
+    100012: polySurface5
+    100014: polySurface6
+    100016: polySurface9
+    100018: Bottom
+    100020: Brace1
+    100022: Brace2
+    100024: Door
+    100026: Frame
+    100028: Top
+    400000: //RootNode
+    400002: left
+    400004: pCube1
+    400006: pCube3
+    400008: pCube4
+    400010: polySurface1
+    400012: polySurface5
+    400014: polySurface6
+    400016: polySurface9
+    400018: Bottom
+    400020: Brace1
+    400022: Brace2
+    400024: Door
+    400026: Frame
+    400028: Top
+    2300000: pCube1
+    2300002: pCube3
+    2300004: pCube4
+    2300006: polySurface1
+    2300008: polySurface5
+    2300010: polySurface6
+    2300012: polySurface9
+    2300014: Bottom
+    2300016: Brace1
+    2300018: Brace2
+    2300020: Door
+    2300022: Frame
+    2300024: Top
+    3300000: pCube1
+    3300002: pCube3
+    3300004: pCube4
+    3300006: polySurface1
+    3300008: polySurface5
+    3300010: polySurface6
+    3300012: polySurface9
+    3300014: Bottom
+    3300016: Brace1
+    3300018: Brace2
+    3300020: Door
+    3300022: Frame
+    3300024: Top
+    4300000: pCube1
+    4300002: polySurface1
+    4300004: pCube3
+    4300006: pCube4
+    4300008: polySurface6
+    4300010: polySurface5
+    4300012: polySurface9
+    4300014: Bottom
+    4300016: Top
+    4300018: Frame
+    4300020: Door
+    4300022: Brace1
+    4300024: Brace2
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
