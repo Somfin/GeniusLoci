@@ -30,7 +30,6 @@ public class TriggerHeightChange : TriggerBase
 		if (moving) {
 			float distCovered = (Time.time - startTime) * speed * dampening;
 			float fracJourney = distCovered / journeyLength;
-			Debug.Log(fracJourney);
 			transform.position = Vector3.Lerp(start, target, fracJourney);
 			if(fracJourney >= 1){
 				moving = false;
