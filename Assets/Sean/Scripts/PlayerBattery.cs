@@ -65,4 +65,12 @@ public class PlayerBattery : MonoBehaviour {
 			partSys.Clear ();
 
 	}
+
+	public void TakeDamage(int attackDamage)
+	{
+		currentBattery -= attackDamage;
+
+		if (currentBattery < 0)
+			currentBattery = 0;
+	}
 }
