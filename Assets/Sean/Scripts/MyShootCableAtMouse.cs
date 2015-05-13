@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class MyShootCableAtMouse : MonoBehaviour {
@@ -9,6 +10,7 @@ public class MyShootCableAtMouse : MonoBehaviour {
 	public float shotSpeed;
 	public float shotDelay;
 	public float shotCooldown;
+	public Text text;
 	
 	private float currentCooldown;
 	private float currentDelay;
@@ -74,13 +76,13 @@ public class MyShootCableAtMouse : MonoBehaviour {
 	
 	void OnGUI() {
 		if (fired) {
-			GUI.Label (new Rect (0, 0, Screen.width, Screen.height), "...");
+			text.text = "...";
 		} else if (firing) {
-			GUI.Label (new Rect (0, 0, Screen.width, Screen.height), "BANG!");
+			text.text = "BANG!";
 		} else if (trigger) {
-			GUI.Label (new Rect (0, 0, Screen.width, Screen.height), "Wait for it...");
+			text.text = "Wait for it...";
 		} else {
-			GUI.Label (new Rect (0, 0, Screen.width, Screen.height), "Ready to fire.");
+			text.text = "Ready to fire.";
 		}
 	}
 }
