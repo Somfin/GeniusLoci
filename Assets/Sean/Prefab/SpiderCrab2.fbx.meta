@@ -1228,7 +1228,8 @@ ModelImporter:
     4300028: Spider:polySurface17
     4300030: Spider:polySurface16
     4300032: Spider:polySurface127
-    7400000: Take 001
+    7400000: Walk
+    7400002: Idle
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -1245,7 +1246,2419 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 28
+      lastFrame: 225
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Spider:back
+        weight: 1
+      - path: Spider:bottom
+        weight: 1
+      - path: Spider:left
+        weight: 1
+      - path: Spider:leg:Back_left
+        weight: 1
+      - path: Spider:leg:Back_left/Spider:ikHandle3
+        weight: 1
+      - path: Spider:leg:Back_left/Spider:ikHandle7
+        weight: 1
+      - path: Spider:leg:Back_left/Spider:joint2
+        weight: 1
+      - path: Spider:leg:Back_left/Spider:joint2/Spider:joint3
+        weight: 1
+      - path: Spider:leg:Back_left/Spider:joint2/Spider:joint3/Spider:joint4
+        weight: 1
+      - path: Spider:leg:Back_left/Spider:joint2/Spider:joint3/Spider:joint4/Spider:joint5
+        weight: 1
+      - path: Spider:leg:Back_left/Spider:joint2/Spider:joint3/Spider:joint4/Spider:polySurface23
+        weight: 1
+      - path: Spider:leg:Back_left/Spider:joint2/Spider:joint3/Spider:polySurface18
+        weight: 1
+      - path: Spider:leg:Back_left/Spider:joint2/Spider:polySurface17
+        weight: 1
+      - path: Spider:leg:Back_left/Spider:polySurface16
+        weight: 1
+      - path: Spider:leg:Back_right
+        weight: 1
+      - path: Spider:leg:Back_right/Spider:ikHandle5
+        weight: 1
+      - path: Spider:leg:Back_right/Spider:leg:ikHandle1
+        weight: 1
+      - path: Spider:leg:Back_right/Spider:leg:joint2
+        weight: 1
+      - path: Spider:leg:Back_right/Spider:leg:joint2/Spider:leg:joint3
+        weight: 1
+      - path: Spider:leg:Back_right/Spider:leg:joint2/Spider:leg:joint3/Spider:leg:joint4
+        weight: 1
+      - path: Spider:leg:Back_right/Spider:leg:joint2/Spider:leg:joint3/Spider:leg:joint4/Spider:leg:joint5
+        weight: 1
+      - path: Spider:leg:Back_right/Spider:leg:joint2/Spider:leg:joint3/Spider:leg:joint4/Spider:leg:polySurface23
+        weight: 1
+      - path: Spider:leg:Back_right/Spider:leg:joint2/Spider:leg:joint3/Spider:leg:polySurface18
+        weight: 1
+      - path: Spider:leg:Back_right/Spider:leg:joint2/Spider:leg:polySurface17
+        weight: 1
+      - path: Spider:leg:Back_right/Spider:leg:polySurface16
+        weight: 1
+      - path: Spider:leg:Front_left
+        weight: 1
+      - path: Spider:leg:Front_left/Spider:ikHandle2
+        weight: 1
+      - path: Spider:leg:Front_left/Spider:ikHandle6
+        weight: 1
+      - path: Spider:leg:Front_left/Spider:joint2 1
+        weight: 1
+      - path: Spider:leg:Front_left/Spider:joint2 1/Spider:joint3 1
+        weight: 1
+      - path: Spider:leg:Front_left/Spider:joint2 1/Spider:joint3 1/Spider:joint4
+          1
+        weight: 1
+      - path: Spider:leg:Front_left/Spider:joint2 1/Spider:joint3 1/Spider:joint4
+          1/Spider:joint5 1
+        weight: 1
+      - path: Spider:leg:Front_left/Spider:joint2 1/Spider:joint3 1/Spider:joint4
+          1/Spider:polySurface23 1
+        weight: 1
+      - path: Spider:leg:Front_left/Spider:joint2 1/Spider:joint3 1/Spider:polySurface18
+          1
+        weight: 1
+      - path: Spider:leg:Front_left/Spider:joint2 1/Spider:polySurface17 1
+        weight: 1
+      - path: Spider:leg:Front_left/Spider:polySurface16 1
+        weight: 1
+      - path: Spider:leg:Front_right
+        weight: 1
+      - path: Spider:leg:Front_right/Spider:ikHandle1
+        weight: 1
+      - path: Spider:leg:Front_right/Spider:ikHandle4
+        weight: 1
+      - path: Spider:leg:Front_right/Spider:joint2 2
+        weight: 1
+      - path: Spider:leg:Front_right/Spider:joint2 2/Spider:joint3 2
+        weight: 1
+      - path: Spider:leg:Front_right/Spider:joint2 2/Spider:joint3 2/Spider:joint4
+          2
+        weight: 1
+      - path: Spider:leg:Front_right/Spider:joint2 2/Spider:joint3 2/Spider:joint4
+          2/Spider:joint5 2
+        weight: 1
+      - path: Spider:leg:Front_right/Spider:joint2 2/Spider:joint3 2/Spider:joint4
+          2/Spider:polySurface23 2
+        weight: 1
+      - path: Spider:leg:Front_right/Spider:joint2 2/Spider:joint3 2/Spider:polySurface18
+          2
+        weight: 1
+      - path: Spider:leg:Front_right/Spider:joint2 2/Spider:polySurface17 2
+        weight: 1
+      - path: Spider:leg:Front_right/Spider:polySurface16 2
+        weight: 1
+      - path: Spider:leg:polySurface19
+        weight: 1
+      - path: Spider:leg:polySurface19/Spider:leg:polySurface20
+        weight: 1
+      - path: Spider:leg:polySurface19/Spider:leg:polySurface20/Spider:leg:transform20
+        weight: 1
+      - path: Spider:leg:polySurface19/Spider:leg:polySurface21
+        weight: 1
+      - path: Spider:leg:polySurface19/Spider:leg:polySurface21/Spider:leg:transform19
+        weight: 1
+      - path: Spider:leg:polySurface19/Spider:leg:polySurface22
+        weight: 1
+      - path: Spider:leg:polySurface19/Spider:leg:polySurface22/Spider:leg:transform18
+        weight: 1
+      - path: Spider:leg:polySurface19/Spider:leg:transform17
+        weight: 1
+      - path: Spider:leg:Spider1:back
+        weight: 1
+      - path: Spider:leg:Spider1:bottom
+        weight: 1
+      - path: Spider:leg:Spider1:left
+        weight: 1
+      - path: Spider:leg:Spider1:pCube1
+        weight: 1
+      - path: Spider:leg:Spider1:pCube1/Spider:leg:Spider1:transform2
+        weight: 1
+      - path: Spider:leg:Spider1:pCube2
+        weight: 1
+      - path: Spider:leg:Spider1:pCube2/Spider:leg:Spider1:transform1
+        weight: 1
+      - path: Spider:leg:Spider1:pCube4
+        weight: 1
+      - path: Spider:leg:Spider1:pCube4/Spider:leg:Spider1:transform7
+        weight: 1
+      - path: Spider:leg:Spider1:pCylinder1
+        weight: 1
+      - path: Spider:leg:Spider1:pCylinder1/Spider:leg:Spider1:transform50
+        weight: 1
+      - path: Spider:leg:Spider1:pCylinder4
+        weight: 1
+      - path: Spider:leg:Spider1:pCylinder4/Spider:leg:Spider1:transform5
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface1
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface1/Spider:leg:Spider1:polySurface2
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface1/Spider:leg:Spider1:polySurface2/Spider:leg:Spider1:transform4
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface1/Spider:leg:Spider1:polySurface3
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface1/Spider:leg:Spider1:polySurface3/Spider:leg:Spider1:transform8
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface1/Spider:leg:Spider1:transform3
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface5
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface5/Spider:leg:Spider1:polySurface6
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface5/Spider:leg:Spider1:polySurface6/Spider:leg:Spider1:transform10
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface5/Spider:leg:Spider1:transform6
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface8
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface8/Spider:leg:Spider1:transform9
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface10
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface10/Spider:leg:Spider1:transform11
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface26
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface26/Spider:leg:Spider1:transform27
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface27
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface27/Spider:leg:Spider1:transform26
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface28
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface28/Spider:leg:Spider1:transform25
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface29
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface29/Spider:leg:Spider1:transform24
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface30
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface30/Spider:leg:Spider1:transform23
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface31
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface31/Spider:leg:Spider1:transform22
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface32
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface32/Spider:leg:Spider1:transform21
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface33
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface33/Spider:leg:Spider1:transform20
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface34
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface34/Spider:leg:Spider1:transform19
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface35
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface35/Spider:leg:Spider1:transform18
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface36
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface36/Spider:leg:Spider1:transform17
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface37
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface37/Spider:leg:Spider1:transform16
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface38
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface38/Spider:leg:Spider1:transform15
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface39
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface39/Spider:leg:Spider1:transform14
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface40
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface40/Spider:leg:Spider1:transform13
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:transform12
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface62
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface62/Spider:leg:Spider1:transform55
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface63
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface63/Spider:leg:Spider1:transform69
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface64
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface64/Spider:leg:Spider1:transform64
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface65
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface65/Spider:leg:Spider1:transform63
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface66
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface66/Spider:leg:Spider1:transform52
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface67
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface67/Spider:leg:Spider1:transform65
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface68
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface68/Spider:leg:Spider1:transform60
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface69
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface69/Spider:leg:Spider1:transform67
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface70
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface70/Spider:leg:Spider1:transform61
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface71
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface71/Spider:leg:Spider1:transform59
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface72
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface72/Spider:leg:Spider1:transform66
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface73
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface73/Spider:leg:Spider1:transform62
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface74
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface74/Spider:leg:Spider1:transform68
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface75
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface75/Spider:leg:Spider1:transform58
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface76
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface76/Spider:leg:Spider1:transform56
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface77
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface77/Spider:leg:Spider1:transform57
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:transform46
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface43
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface43/Spider:leg:Spider1:transform45
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface44
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface44/Spider:leg:Spider1:transform44
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface45
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface45/Spider:leg:Spider1:transform43
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface46
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface46/Spider:leg:Spider1:transform42
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface47
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface47/Spider:leg:Spider1:transform41
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface48
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface48/Spider:leg:Spider1:transform40
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface49
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface49/Spider:leg:Spider1:transform39
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface50
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface50/Spider:leg:Spider1:transform38
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface51
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface51/Spider:leg:Spider1:transform37
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface52
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface52/Spider:leg:Spider1:transform36
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface53
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface53/Spider:leg:Spider1:transform35
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface54
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface54/Spider:leg:Spider1:transform34
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface55
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface55/Spider:leg:Spider1:transform33
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface56
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface56/Spider:leg:Spider1:transform32
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface57
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface57/Spider:leg:Spider1:transform31
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface58
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface58/Spider:leg:Spider1:transform30
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:transform29
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface78
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface78/Spider:leg:Spider1:transform84
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface79
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface79/Spider:leg:Spider1:transform83
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface80
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface80/Spider:leg:Spider1:transform82
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface81
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface81/Spider:leg:Spider1:transform81
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface82
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface82/Spider:leg:Spider1:transform51
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface83
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface83/Spider:leg:Spider1:transform80
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface84
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface84/Spider:leg:Spider1:transform79
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface85
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface85/Spider:leg:Spider1:transform78
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface86
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface86/Spider:leg:Spider1:transform77
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface87
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface87/Spider:leg:Spider1:transform76
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface88
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface88/Spider:leg:Spider1:transform75
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface89
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface89/Spider:leg:Spider1:transform74
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface90
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface90/Spider:leg:Spider1:transform73
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface91
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface91/Spider:leg:Spider1:transform72
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface92
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface92/Spider:leg:Spider1:transform71
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface93
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface93/Spider:leg:Spider1:transform70
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:transform47
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface110
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface110/Spider:leg:Spider1:transform99
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface111
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface111/Spider:leg:Spider1:transform98
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface112
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface112/Spider:leg:Spider1:transform97
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface113
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface113/Spider:leg:Spider1:transform96
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface114
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface114/Spider:leg:Spider1:transform53
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface115
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface115/Spider:leg:Spider1:transform95
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface116
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface116/Spider:leg:Spider1:transform94
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface117
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface117/Spider:leg:Spider1:transform93
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface118
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface118/Spider:leg:Spider1:transform92
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface119
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface119/Spider:leg:Spider1:transform91
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface120
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface120/Spider:leg:Spider1:transform90
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface121
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface121/Spider:leg:Spider1:transform89
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface122
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface122/Spider:leg:Spider1:transform88
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface123
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface123/Spider:leg:Spider1:transform87
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface124
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface124/Spider:leg:Spider1:transform86
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface125
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface125/Spider:leg:Spider1:transform85
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:transform49
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface94
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface94/Spider:leg:Spider1:transform114
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface95
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface95/Spider:leg:Spider1:transform113
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface96
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface96/Spider:leg:Spider1:transform112
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface97
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface97/Spider:leg:Spider1:transform111
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface98
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface98/Spider:leg:Spider1:transform54
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface99
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface99/Spider:leg:Spider1:transform110
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface100
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface100/Spider:leg:Spider1:transform109
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface101
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface101/Spider:leg:Spider1:transform108
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface102
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface102/Spider:leg:Spider1:transform107
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface103
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface103/Spider:leg:Spider1:transform106
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface104
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface104/Spider:leg:Spider1:transform105
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface105
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface105/Spider:leg:Spider1:transform104
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface106
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface106/Spider:leg:Spider1:transform103
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface107
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface107/Spider:leg:Spider1:transform102
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface108
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface108/Spider:leg:Spider1:transform101
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface109
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface109/Spider:leg:Spider1:transform100
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:transform48
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface131
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface131/Spider:leg:Spider1:transform119
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface132
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface132/Spider:leg:Spider1:transform118
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface133
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface133/Spider:leg:Spider1:transform117
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface134
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface134/Spider:leg:Spider1:transform123
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface135
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface135/Spider:leg:Spider1:transform122
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface136
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface136/Spider:leg:Spider1:transform116
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface137
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface137/Spider:leg:Spider1:transform121
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface138
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface138/Spider:leg:Spider1:transform127
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface139
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface139/Spider:leg:Spider1:transform120
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface140
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface140/Spider:leg:Spider1:transform126
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface141
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface141/Spider:leg:Spider1:transform125
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface142
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface142/Spider:leg:Spider1:transform129
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface143
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface143/Spider:leg:Spider1:transform124
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface144
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface144/Spider:leg:Spider1:transform130
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface145
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface145/Spider:leg:Spider1:transform128
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:transform115
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface1
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface1/Spider:leg:transform14
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface2
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface2/Spider:leg:transform5
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface3
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface3/Spider:leg:transform2
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface4
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface4/Spider:leg:transform7
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface5
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface5/Spider:leg:transform8
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface6
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface6/Spider:leg:transform12
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface7
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface7/Spider:leg:transform3
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface8
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface8/Spider:leg:transform6
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface9
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface9/Spider:leg:transform11
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface10
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface10/Spider:leg:transform9
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface11
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface11/Spider:leg:transform13
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface12
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface12/Spider:leg:transform4
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface13
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface13/Spider:leg:transform16
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface14
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface14/Spider:leg:transform15
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface15
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface15/Spider:leg:transform10
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:transform1
+        weight: 1
+      - path: Spider:leg:Spider1:pPlane1
+        weight: 1
+      - path: Spider:leg:Spider1:pPlane1/Spider:leg:Spider1:transform28
+        weight: 1
+      - path: Spider:pCube1
+        weight: 1
+      - path: Spider:pCube1/Spider:transform2
+        weight: 1
+      - path: Spider:pCube2
+        weight: 1
+      - path: Spider:pCube2/Spider:transform1
+        weight: 1
+      - path: Spider:pCube4
+        weight: 1
+      - path: Spider:pCube4/Spider:transform7
+        weight: 1
+      - path: Spider:pCylinder1
+        weight: 1
+      - path: Spider:pCylinder1/Spider:transform50
+        weight: 1
+      - path: Spider:pCylinder2
+        weight: 1
+      - path: Spider:pCylinder2/Spider:transform117
+        weight: 1
+      - path: Spider:pCylinder4
+        weight: 1
+      - path: Spider:pCylinder4/Spider:transform5
+        weight: 1
+      - path: Spider:polySurface1
+        weight: 1
+      - path: Spider:polySurface1/Spider:polySurface2
+        weight: 1
+      - path: Spider:polySurface1/Spider:polySurface2/Spider:transform4
+        weight: 1
+      - path: Spider:polySurface1/Spider:polySurface3
+        weight: 1
+      - path: Spider:polySurface1/Spider:polySurface3/Spider:transform8
+        weight: 1
+      - path: Spider:polySurface1/Spider:transform3
+        weight: 1
+      - path: Spider:polySurface5
+        weight: 1
+      - path: Spider:polySurface5/Spider:polySurface6
+        weight: 1
+      - path: Spider:polySurface5/Spider:polySurface6/Spider:transform10
+        weight: 1
+      - path: Spider:polySurface5/Spider:transform6
+        weight: 1
+      - path: Spider:polySurface8
+        weight: 1
+      - path: Spider:polySurface8/Spider:transform9
+        weight: 1
+      - path: Spider:polySurface10
+        weight: 1
+      - path: Spider:polySurface10/Spider:transform11
+        weight: 1
+      - path: Spider:polySurface126
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface26
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface26/Spider:transform27
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface27
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface27/Spider:transform26
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface28
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface28/Spider:transform25
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface29
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface29/Spider:transform24
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface30
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface30/Spider:transform23
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface31
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface31/Spider:transform22
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface32
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface32/Spider:transform21
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface33
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface33/Spider:transform20
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface34
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface34/Spider:transform19
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface35
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface35/Spider:transform18
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface36
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface36/Spider:transform17
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface37
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface37/Spider:transform16
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface38
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface38/Spider:transform15
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface39
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface39/Spider:transform14
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface40
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface40/Spider:transform13
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:transform12
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface62
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface62/Spider:transform55
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface63
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface63/Spider:transform69
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface64
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface64/Spider:transform64
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface65
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface65/Spider:transform63
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface66
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface66/Spider:transform52
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface67
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface67/Spider:transform65
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface68
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface68/Spider:transform60
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface69
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface69/Spider:transform67
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface70
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface70/Spider:transform61
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface71
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface71/Spider:transform59
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface72
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface72/Spider:transform66
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface73
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface73/Spider:transform62
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface74
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface74/Spider:transform68
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface75
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface75/Spider:transform58
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface76
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface76/Spider:transform56
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface77
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface77/Spider:transform57
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:transform46
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface43
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface43/Spider:transform45
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface44
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface44/Spider:transform44
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface45
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface45/Spider:transform43
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface46
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface46/Spider:transform42
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface47
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface47/Spider:transform41
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface48
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface48/Spider:transform40
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface49
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface49/Spider:transform39
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface50
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface50/Spider:transform38
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface51
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface51/Spider:transform37
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface52
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface52/Spider:transform36
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface53
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface53/Spider:transform35
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface54
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface54/Spider:transform34
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface55
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface55/Spider:transform33
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface56
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface56/Spider:transform32
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface57
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface57/Spider:transform31
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface58
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface58/Spider:transform30
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:transform29
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface78
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface78/Spider:transform84
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface79
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface79/Spider:transform83
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface80
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface80/Spider:transform82
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface81
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface81/Spider:transform81
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface82
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface82/Spider:transform51
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface83
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface83/Spider:transform80
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface84
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface84/Spider:transform79
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface85
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface85/Spider:transform78
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface86
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface86/Spider:transform77
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface87
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface87/Spider:transform76
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface88
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface88/Spider:transform75
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface89
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface89/Spider:transform74
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface90
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface90/Spider:transform73
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface91
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface91/Spider:transform72
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface92
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface92/Spider:transform71
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface93
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface93/Spider:transform70
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:transform47
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface110
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface110/Spider:transform99
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface111
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface111/Spider:transform98
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface112
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface112/Spider:transform97
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface113
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface113/Spider:transform96
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface114
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface114/Spider:transform53
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface115
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface115/Spider:transform95
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface116
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface116/Spider:transform94
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface117
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface117/Spider:transform93
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface118
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface118/Spider:transform92
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface119
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface119/Spider:transform91
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface120
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface120/Spider:transform90
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface121
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface121/Spider:transform89
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface122
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface122/Spider:transform88
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface123
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface123/Spider:transform87
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface124
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface124/Spider:transform86
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface125
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface125/Spider:transform85
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:transform49
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface94
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface94/Spider:transform114
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface95
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface95/Spider:transform113
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface96
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface96/Spider:transform112
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface97
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface97/Spider:transform111
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface98
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface98/Spider:transform54
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface99
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface99/Spider:transform110
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface100
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface100/Spider:transform109
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface101
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface101/Spider:transform108
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface102
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface102/Spider:transform107
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface103
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface103/Spider:transform106
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface104
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface104/Spider:transform105
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface105
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface105/Spider:transform104
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface106
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface106/Spider:transform103
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface107
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface107/Spider:transform102
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface108
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface108/Spider:transform101
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface109
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface109/Spider:transform100
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:transform48
+        weight: 1
+      - path: Spider:polySurface126/Spider:transform115
+        weight: 1
+      - path: Spider:polySurface127
+        weight: 1
+      - path: Spider:pPlane1
+        weight: 1
+      - path: Spider:pPlane1/Spider:transform28
+        weight: 1
+      - path: Spider:pSphere1
+        weight: 1
+      - path: Spider:pSphere1/Spider:transform116
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 233
+      lastFrame: 330
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Spider:back
+        weight: 1
+      - path: Spider:bottom
+        weight: 1
+      - path: Spider:left
+        weight: 1
+      - path: Spider:leg:Back_left
+        weight: 1
+      - path: Spider:leg:Back_left/Spider:ikHandle3
+        weight: 1
+      - path: Spider:leg:Back_left/Spider:ikHandle7
+        weight: 1
+      - path: Spider:leg:Back_left/Spider:joint2
+        weight: 1
+      - path: Spider:leg:Back_left/Spider:joint2/Spider:joint3
+        weight: 1
+      - path: Spider:leg:Back_left/Spider:joint2/Spider:joint3/Spider:joint4
+        weight: 1
+      - path: Spider:leg:Back_left/Spider:joint2/Spider:joint3/Spider:joint4/Spider:joint5
+        weight: 1
+      - path: Spider:leg:Back_left/Spider:joint2/Spider:joint3/Spider:joint4/Spider:polySurface23
+        weight: 1
+      - path: Spider:leg:Back_left/Spider:joint2/Spider:joint3/Spider:polySurface18
+        weight: 1
+      - path: Spider:leg:Back_left/Spider:joint2/Spider:polySurface17
+        weight: 1
+      - path: Spider:leg:Back_left/Spider:polySurface16
+        weight: 1
+      - path: Spider:leg:Back_right
+        weight: 1
+      - path: Spider:leg:Back_right/Spider:ikHandle5
+        weight: 1
+      - path: Spider:leg:Back_right/Spider:leg:ikHandle1
+        weight: 1
+      - path: Spider:leg:Back_right/Spider:leg:joint2
+        weight: 1
+      - path: Spider:leg:Back_right/Spider:leg:joint2/Spider:leg:joint3
+        weight: 1
+      - path: Spider:leg:Back_right/Spider:leg:joint2/Spider:leg:joint3/Spider:leg:joint4
+        weight: 1
+      - path: Spider:leg:Back_right/Spider:leg:joint2/Spider:leg:joint3/Spider:leg:joint4/Spider:leg:joint5
+        weight: 1
+      - path: Spider:leg:Back_right/Spider:leg:joint2/Spider:leg:joint3/Spider:leg:joint4/Spider:leg:polySurface23
+        weight: 1
+      - path: Spider:leg:Back_right/Spider:leg:joint2/Spider:leg:joint3/Spider:leg:polySurface18
+        weight: 1
+      - path: Spider:leg:Back_right/Spider:leg:joint2/Spider:leg:polySurface17
+        weight: 1
+      - path: Spider:leg:Back_right/Spider:leg:polySurface16
+        weight: 1
+      - path: Spider:leg:Front_left
+        weight: 1
+      - path: Spider:leg:Front_left/Spider:ikHandle2
+        weight: 1
+      - path: Spider:leg:Front_left/Spider:ikHandle6
+        weight: 1
+      - path: Spider:leg:Front_left/Spider:joint2 1
+        weight: 1
+      - path: Spider:leg:Front_left/Spider:joint2 1/Spider:joint3 1
+        weight: 1
+      - path: Spider:leg:Front_left/Spider:joint2 1/Spider:joint3 1/Spider:joint4
+          1
+        weight: 1
+      - path: Spider:leg:Front_left/Spider:joint2 1/Spider:joint3 1/Spider:joint4
+          1/Spider:joint5 1
+        weight: 1
+      - path: Spider:leg:Front_left/Spider:joint2 1/Spider:joint3 1/Spider:joint4
+          1/Spider:polySurface23 1
+        weight: 1
+      - path: Spider:leg:Front_left/Spider:joint2 1/Spider:joint3 1/Spider:polySurface18
+          1
+        weight: 1
+      - path: Spider:leg:Front_left/Spider:joint2 1/Spider:polySurface17 1
+        weight: 1
+      - path: Spider:leg:Front_left/Spider:polySurface16 1
+        weight: 1
+      - path: Spider:leg:Front_right
+        weight: 1
+      - path: Spider:leg:Front_right/Spider:ikHandle1
+        weight: 1
+      - path: Spider:leg:Front_right/Spider:ikHandle4
+        weight: 1
+      - path: Spider:leg:Front_right/Spider:joint2 2
+        weight: 1
+      - path: Spider:leg:Front_right/Spider:joint2 2/Spider:joint3 2
+        weight: 1
+      - path: Spider:leg:Front_right/Spider:joint2 2/Spider:joint3 2/Spider:joint4
+          2
+        weight: 1
+      - path: Spider:leg:Front_right/Spider:joint2 2/Spider:joint3 2/Spider:joint4
+          2/Spider:joint5 2
+        weight: 1
+      - path: Spider:leg:Front_right/Spider:joint2 2/Spider:joint3 2/Spider:joint4
+          2/Spider:polySurface23 2
+        weight: 1
+      - path: Spider:leg:Front_right/Spider:joint2 2/Spider:joint3 2/Spider:polySurface18
+          2
+        weight: 1
+      - path: Spider:leg:Front_right/Spider:joint2 2/Spider:polySurface17 2
+        weight: 1
+      - path: Spider:leg:Front_right/Spider:polySurface16 2
+        weight: 1
+      - path: Spider:leg:polySurface19
+        weight: 1
+      - path: Spider:leg:polySurface19/Spider:leg:polySurface20
+        weight: 1
+      - path: Spider:leg:polySurface19/Spider:leg:polySurface20/Spider:leg:transform20
+        weight: 1
+      - path: Spider:leg:polySurface19/Spider:leg:polySurface21
+        weight: 1
+      - path: Spider:leg:polySurface19/Spider:leg:polySurface21/Spider:leg:transform19
+        weight: 1
+      - path: Spider:leg:polySurface19/Spider:leg:polySurface22
+        weight: 1
+      - path: Spider:leg:polySurface19/Spider:leg:polySurface22/Spider:leg:transform18
+        weight: 1
+      - path: Spider:leg:polySurface19/Spider:leg:transform17
+        weight: 1
+      - path: Spider:leg:Spider1:back
+        weight: 1
+      - path: Spider:leg:Spider1:bottom
+        weight: 1
+      - path: Spider:leg:Spider1:left
+        weight: 1
+      - path: Spider:leg:Spider1:pCube1
+        weight: 1
+      - path: Spider:leg:Spider1:pCube1/Spider:leg:Spider1:transform2
+        weight: 1
+      - path: Spider:leg:Spider1:pCube2
+        weight: 1
+      - path: Spider:leg:Spider1:pCube2/Spider:leg:Spider1:transform1
+        weight: 1
+      - path: Spider:leg:Spider1:pCube4
+        weight: 1
+      - path: Spider:leg:Spider1:pCube4/Spider:leg:Spider1:transform7
+        weight: 1
+      - path: Spider:leg:Spider1:pCylinder1
+        weight: 1
+      - path: Spider:leg:Spider1:pCylinder1/Spider:leg:Spider1:transform50
+        weight: 1
+      - path: Spider:leg:Spider1:pCylinder4
+        weight: 1
+      - path: Spider:leg:Spider1:pCylinder4/Spider:leg:Spider1:transform5
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface1
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface1/Spider:leg:Spider1:polySurface2
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface1/Spider:leg:Spider1:polySurface2/Spider:leg:Spider1:transform4
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface1/Spider:leg:Spider1:polySurface3
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface1/Spider:leg:Spider1:polySurface3/Spider:leg:Spider1:transform8
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface1/Spider:leg:Spider1:transform3
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface5
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface5/Spider:leg:Spider1:polySurface6
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface5/Spider:leg:Spider1:polySurface6/Spider:leg:Spider1:transform10
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface5/Spider:leg:Spider1:transform6
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface8
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface8/Spider:leg:Spider1:transform9
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface10
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface10/Spider:leg:Spider1:transform11
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface26
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface26/Spider:leg:Spider1:transform27
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface27
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface27/Spider:leg:Spider1:transform26
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface28
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface28/Spider:leg:Spider1:transform25
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface29
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface29/Spider:leg:Spider1:transform24
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface30
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface30/Spider:leg:Spider1:transform23
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface31
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface31/Spider:leg:Spider1:transform22
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface32
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface32/Spider:leg:Spider1:transform21
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface33
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface33/Spider:leg:Spider1:transform20
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface34
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface34/Spider:leg:Spider1:transform19
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface35
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface35/Spider:leg:Spider1:transform18
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface36
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface36/Spider:leg:Spider1:transform17
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface37
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface37/Spider:leg:Spider1:transform16
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface38
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface38/Spider:leg:Spider1:transform15
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface39
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface39/Spider:leg:Spider1:transform14
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface40
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:polySurface40/Spider:leg:Spider1:transform13
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface25/Spider:leg:Spider1:transform12
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface62
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface62/Spider:leg:Spider1:transform55
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface63
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface63/Spider:leg:Spider1:transform69
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface64
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface64/Spider:leg:Spider1:transform64
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface65
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface65/Spider:leg:Spider1:transform63
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface66
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface66/Spider:leg:Spider1:transform52
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface67
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface67/Spider:leg:Spider1:transform65
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface68
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface68/Spider:leg:Spider1:transform60
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface69
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface69/Spider:leg:Spider1:transform67
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface70
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface70/Spider:leg:Spider1:transform61
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface71
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface71/Spider:leg:Spider1:transform59
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface72
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface72/Spider:leg:Spider1:transform66
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface73
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface73/Spider:leg:Spider1:transform62
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface74
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface74/Spider:leg:Spider1:transform68
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface75
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface75/Spider:leg:Spider1:transform58
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface76
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface76/Spider:leg:Spider1:transform56
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface77
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:polySurface77/Spider:leg:Spider1:transform57
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface41/Spider:leg:Spider1:transform46
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface43
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface43/Spider:leg:Spider1:transform45
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface44
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface44/Spider:leg:Spider1:transform44
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface45
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface45/Spider:leg:Spider1:transform43
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface46
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface46/Spider:leg:Spider1:transform42
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface47
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface47/Spider:leg:Spider1:transform41
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface48
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface48/Spider:leg:Spider1:transform40
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface49
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface49/Spider:leg:Spider1:transform39
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface50
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface50/Spider:leg:Spider1:transform38
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface51
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface51/Spider:leg:Spider1:transform37
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface52
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface52/Spider:leg:Spider1:transform36
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface53
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface53/Spider:leg:Spider1:transform35
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface54
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface54/Spider:leg:Spider1:transform34
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface55
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface55/Spider:leg:Spider1:transform33
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface56
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface56/Spider:leg:Spider1:transform32
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface57
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface57/Spider:leg:Spider1:transform31
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface58
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:polySurface58/Spider:leg:Spider1:transform30
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface42/Spider:leg:Spider1:transform29
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface78
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface78/Spider:leg:Spider1:transform84
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface79
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface79/Spider:leg:Spider1:transform83
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface80
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface80/Spider:leg:Spider1:transform82
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface81
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface81/Spider:leg:Spider1:transform81
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface82
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface82/Spider:leg:Spider1:transform51
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface83
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface83/Spider:leg:Spider1:transform80
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface84
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface84/Spider:leg:Spider1:transform79
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface85
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface85/Spider:leg:Spider1:transform78
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface86
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface86/Spider:leg:Spider1:transform77
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface87
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface87/Spider:leg:Spider1:transform76
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface88
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface88/Spider:leg:Spider1:transform75
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface89
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface89/Spider:leg:Spider1:transform74
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface90
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface90/Spider:leg:Spider1:transform73
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface91
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface91/Spider:leg:Spider1:transform72
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface92
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface92/Spider:leg:Spider1:transform71
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface93
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:polySurface93/Spider:leg:Spider1:transform70
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface59/Spider:leg:Spider1:transform47
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface110
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface110/Spider:leg:Spider1:transform99
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface111
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface111/Spider:leg:Spider1:transform98
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface112
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface112/Spider:leg:Spider1:transform97
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface113
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface113/Spider:leg:Spider1:transform96
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface114
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface114/Spider:leg:Spider1:transform53
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface115
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface115/Spider:leg:Spider1:transform95
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface116
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface116/Spider:leg:Spider1:transform94
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface117
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface117/Spider:leg:Spider1:transform93
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface118
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface118/Spider:leg:Spider1:transform92
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface119
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface119/Spider:leg:Spider1:transform91
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface120
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface120/Spider:leg:Spider1:transform90
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface121
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface121/Spider:leg:Spider1:transform89
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface122
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface122/Spider:leg:Spider1:transform88
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface123
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface123/Spider:leg:Spider1:transform87
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface124
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface124/Spider:leg:Spider1:transform86
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface125
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:polySurface125/Spider:leg:Spider1:transform85
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface60/Spider:leg:Spider1:transform49
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface94
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface94/Spider:leg:Spider1:transform114
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface95
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface95/Spider:leg:Spider1:transform113
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface96
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface96/Spider:leg:Spider1:transform112
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface97
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface97/Spider:leg:Spider1:transform111
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface98
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface98/Spider:leg:Spider1:transform54
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface99
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface99/Spider:leg:Spider1:transform110
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface100
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface100/Spider:leg:Spider1:transform109
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface101
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface101/Spider:leg:Spider1:transform108
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface102
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface102/Spider:leg:Spider1:transform107
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface103
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface103/Spider:leg:Spider1:transform106
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface104
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface104/Spider:leg:Spider1:transform105
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface105
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface105/Spider:leg:Spider1:transform104
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface106
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface106/Spider:leg:Spider1:transform103
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface107
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface107/Spider:leg:Spider1:transform102
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface108
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface108/Spider:leg:Spider1:transform101
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface109
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:polySurface109/Spider:leg:Spider1:transform100
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface61/Spider:leg:Spider1:transform48
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface131
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface131/Spider:leg:Spider1:transform119
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface132
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface132/Spider:leg:Spider1:transform118
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface133
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface133/Spider:leg:Spider1:transform117
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface134
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface134/Spider:leg:Spider1:transform123
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface135
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface135/Spider:leg:Spider1:transform122
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface136
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface136/Spider:leg:Spider1:transform116
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface137
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface137/Spider:leg:Spider1:transform121
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface138
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface138/Spider:leg:Spider1:transform127
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface139
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface139/Spider:leg:Spider1:transform120
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface140
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface140/Spider:leg:Spider1:transform126
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface141
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface141/Spider:leg:Spider1:transform125
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface142
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface142/Spider:leg:Spider1:transform129
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface143
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface143/Spider:leg:Spider1:transform124
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface144
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface144/Spider:leg:Spider1:transform130
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface145
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:polySurface145/Spider:leg:Spider1:transform128
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface127/Spider:leg:Spider1:transform115
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface1
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface1/Spider:leg:transform14
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface2
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface2/Spider:leg:transform5
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface3
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface3/Spider:leg:transform2
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface4
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface4/Spider:leg:transform7
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface5
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface5/Spider:leg:transform8
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface6
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface6/Spider:leg:transform12
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface7
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface7/Spider:leg:transform3
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface8
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface8/Spider:leg:transform6
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface9
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface9/Spider:leg:transform11
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface10
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface10/Spider:leg:transform9
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface11
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface11/Spider:leg:transform13
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface12
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface12/Spider:leg:transform4
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface13
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface13/Spider:leg:transform16
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface14
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface14/Spider:leg:transform15
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface15
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:polySurface15/Spider:leg:transform10
+        weight: 1
+      - path: Spider:leg:Spider1:polySurface128/Spider:leg:transform1
+        weight: 1
+      - path: Spider:leg:Spider1:pPlane1
+        weight: 1
+      - path: Spider:leg:Spider1:pPlane1/Spider:leg:Spider1:transform28
+        weight: 1
+      - path: Spider:pCube1
+        weight: 1
+      - path: Spider:pCube1/Spider:transform2
+        weight: 1
+      - path: Spider:pCube2
+        weight: 1
+      - path: Spider:pCube2/Spider:transform1
+        weight: 1
+      - path: Spider:pCube4
+        weight: 1
+      - path: Spider:pCube4/Spider:transform7
+        weight: 1
+      - path: Spider:pCylinder1
+        weight: 1
+      - path: Spider:pCylinder1/Spider:transform50
+        weight: 1
+      - path: Spider:pCylinder2
+        weight: 1
+      - path: Spider:pCylinder2/Spider:transform117
+        weight: 1
+      - path: Spider:pCylinder4
+        weight: 1
+      - path: Spider:pCylinder4/Spider:transform5
+        weight: 1
+      - path: Spider:polySurface1
+        weight: 1
+      - path: Spider:polySurface1/Spider:polySurface2
+        weight: 1
+      - path: Spider:polySurface1/Spider:polySurface2/Spider:transform4
+        weight: 1
+      - path: Spider:polySurface1/Spider:polySurface3
+        weight: 1
+      - path: Spider:polySurface1/Spider:polySurface3/Spider:transform8
+        weight: 1
+      - path: Spider:polySurface1/Spider:transform3
+        weight: 1
+      - path: Spider:polySurface5
+        weight: 1
+      - path: Spider:polySurface5/Spider:polySurface6
+        weight: 1
+      - path: Spider:polySurface5/Spider:polySurface6/Spider:transform10
+        weight: 1
+      - path: Spider:polySurface5/Spider:transform6
+        weight: 1
+      - path: Spider:polySurface8
+        weight: 1
+      - path: Spider:polySurface8/Spider:transform9
+        weight: 1
+      - path: Spider:polySurface10
+        weight: 1
+      - path: Spider:polySurface10/Spider:transform11
+        weight: 1
+      - path: Spider:polySurface126
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface26
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface26/Spider:transform27
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface27
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface27/Spider:transform26
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface28
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface28/Spider:transform25
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface29
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface29/Spider:transform24
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface30
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface30/Spider:transform23
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface31
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface31/Spider:transform22
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface32
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface32/Spider:transform21
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface33
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface33/Spider:transform20
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface34
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface34/Spider:transform19
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface35
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface35/Spider:transform18
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface36
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface36/Spider:transform17
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface37
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface37/Spider:transform16
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface38
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface38/Spider:transform15
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface39
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface39/Spider:transform14
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface40
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:polySurface40/Spider:transform13
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface25/Spider:transform12
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface62
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface62/Spider:transform55
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface63
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface63/Spider:transform69
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface64
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface64/Spider:transform64
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface65
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface65/Spider:transform63
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface66
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface66/Spider:transform52
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface67
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface67/Spider:transform65
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface68
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface68/Spider:transform60
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface69
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface69/Spider:transform67
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface70
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface70/Spider:transform61
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface71
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface71/Spider:transform59
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface72
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface72/Spider:transform66
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface73
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface73/Spider:transform62
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface74
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface74/Spider:transform68
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface75
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface75/Spider:transform58
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface76
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface76/Spider:transform56
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface77
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:polySurface77/Spider:transform57
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface41/Spider:transform46
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface43
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface43/Spider:transform45
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface44
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface44/Spider:transform44
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface45
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface45/Spider:transform43
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface46
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface46/Spider:transform42
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface47
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface47/Spider:transform41
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface48
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface48/Spider:transform40
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface49
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface49/Spider:transform39
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface50
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface50/Spider:transform38
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface51
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface51/Spider:transform37
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface52
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface52/Spider:transform36
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface53
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface53/Spider:transform35
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface54
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface54/Spider:transform34
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface55
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface55/Spider:transform33
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface56
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface56/Spider:transform32
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface57
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface57/Spider:transform31
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface58
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:polySurface58/Spider:transform30
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface42/Spider:transform29
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface78
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface78/Spider:transform84
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface79
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface79/Spider:transform83
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface80
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface80/Spider:transform82
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface81
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface81/Spider:transform81
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface82
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface82/Spider:transform51
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface83
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface83/Spider:transform80
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface84
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface84/Spider:transform79
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface85
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface85/Spider:transform78
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface86
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface86/Spider:transform77
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface87
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface87/Spider:transform76
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface88
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface88/Spider:transform75
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface89
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface89/Spider:transform74
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface90
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface90/Spider:transform73
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface91
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface91/Spider:transform72
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface92
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface92/Spider:transform71
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface93
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:polySurface93/Spider:transform70
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface59/Spider:transform47
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface110
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface110/Spider:transform99
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface111
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface111/Spider:transform98
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface112
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface112/Spider:transform97
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface113
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface113/Spider:transform96
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface114
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface114/Spider:transform53
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface115
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface115/Spider:transform95
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface116
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface116/Spider:transform94
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface117
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface117/Spider:transform93
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface118
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface118/Spider:transform92
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface119
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface119/Spider:transform91
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface120
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface120/Spider:transform90
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface121
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface121/Spider:transform89
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface122
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface122/Spider:transform88
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface123
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface123/Spider:transform87
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface124
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface124/Spider:transform86
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface125
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:polySurface125/Spider:transform85
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface60/Spider:transform49
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface94
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface94/Spider:transform114
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface95
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface95/Spider:transform113
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface96
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface96/Spider:transform112
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface97
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface97/Spider:transform111
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface98
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface98/Spider:transform54
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface99
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface99/Spider:transform110
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface100
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface100/Spider:transform109
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface101
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface101/Spider:transform108
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface102
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface102/Spider:transform107
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface103
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface103/Spider:transform106
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface104
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface104/Spider:transform105
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface105
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface105/Spider:transform104
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface106
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface106/Spider:transform103
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface107
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface107/Spider:transform102
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface108
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface108/Spider:transform101
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface109
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:polySurface109/Spider:transform100
+        weight: 1
+      - path: Spider:polySurface126/Spider:polySurface61/Spider:transform48
+        weight: 1
+      - path: Spider:polySurface126/Spider:transform115
+        weight: 1
+      - path: Spider:polySurface127
+        weight: 1
+      - path: Spider:pPlane1
+        weight: 1
+      - path: Spider:pPlane1/Spider:transform28
+        weight: 1
+      - path: Spider:pSphere1
+        weight: 1
+      - path: Spider:pSphere1/Spider:transform116
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
