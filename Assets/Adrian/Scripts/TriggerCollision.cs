@@ -41,8 +41,8 @@ public class TriggerCollision : TriggerBase
 		if (!triggerOnce || !triggered) {
 			if (other.gameObject.tag.Equals (triggeredByTag)) {
 				TriggerChildren ();
+				triggered = true;
 			}
-			triggered = true;
 		}
 	}
 }
