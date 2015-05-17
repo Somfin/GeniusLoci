@@ -4,10 +4,10 @@ using System.Collections;
 
 public class Crosshair : MonoBehaviour {
 
-	public float maxDistance = Mathf.Infinity;
+	public float maxDistance = 50f;
 	public Image crosshairImage;
-	public float maxCrosshairLength = 100; //Crosshair size at its largest
-	public float minCrosshairLength = 40; //Crosshair size at its smallest
+	public float maxCrosshairLength = 40f; //Crosshair size at its largest
+	public float minCrosshairLength = 20f; //Crosshair size at its smallest
 
 	private float range;
 	private RaycastHit hit;
