@@ -38,7 +38,7 @@ public class Crosshair : MonoBehaviour {
 
 			viewportPoint = Camera.main.WorldToViewportPoint (hit.point);
 
-			Debug.Log("viewportPoint " + viewportPoint);
+			//Debug.Log("viewportPoint " + viewportPoint);
 
 			crosshairImage.rectTransform.anchorMax = new Vector2(viewportPoint.x, viewportPoint.y);
 			crosshairImage.rectTransform.anchorMin = new Vector2(viewportPoint.x, viewportPoint.y);
