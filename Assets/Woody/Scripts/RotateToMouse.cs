@@ -20,7 +20,7 @@ public class RotateToMouse : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate () {
+	void Update () {
 		float x = horizTurn * Input.GetAxis ("Mouse X");
 		float y = -vertMove * Input.GetAxis ("Mouse Y");
 		movY = new Vector3(0, y, 0);
