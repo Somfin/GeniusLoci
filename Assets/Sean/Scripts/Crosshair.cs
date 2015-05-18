@@ -8,10 +8,15 @@ public class Crosshair : MonoBehaviour {
 	public Image crosshairImage;
 	public float maxCrosshairLength = 40f; //Crosshair size at its largest
 	public float minCrosshairLength = 20f; //Crosshair size at its smallest
+	public float opacityLevelWhenBehindPlayer = .5f; //Number between 0-1
 
 	private float range;
 	private RaycastHit hit;
 	private Vector3 viewportPoint;
+
+	private Ray camRay;
+	private RaycastHit camHit;
+	private bool crosshairBehindPlayer = false;
 
 	void Start()
 	{
@@ -37,6 +42,31 @@ public class Crosshair : MonoBehaviour {
 		if (Physics.Raycast (transform.position, tempVec, out hit, maxDistance)) {
 
 			viewportPoint = Camera.main.WorldToViewportPoint (hit.point);
+
+
+
+			camRay = Camera.main.ViewportPointToRay(viewportPoint);
+
+			if(Physics.Raycast(camRay, out camHit)){
+				if(camHit.collider.tag == "Player")
+					crosshairBehindPlayer = true;
+				else
+					crosshairBehindPlayer = false;
+			}
+
+			Color tempColor = Color.white;
+			if(crosshairBehindPlayer)
+			{
+				tempColor.a = opacityLevelWhenBehindPlayer;
+				//crosshairImage.color.a;
+
+			}else {
+
+				//crosshairImage.color.a = 1;
+				tempColor.a = 1f;
+			}
+			crosshairImage.color = tempColor;
+
 
 			//Debug.Log("viewportPoint " + viewportPoint);
 
