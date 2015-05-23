@@ -47,14 +47,19 @@ public class Crosshair : MonoBehaviour {
 
 			camRay = Camera.main.ViewportPointToRay(viewportPoint);
 
+			Color tempColor = Color.white;
 			if(Physics.Raycast(camRay, out camHit)){
 				if(camHit.collider.tag == "Player")
 					crosshairBehindPlayer = true;
 				else
 					crosshairBehindPlayer = false;
+
+				if(camHit.collider.tag == "Pull")
+					tempColor = Color.green;
+				else
+					tempColor = Color.white;
 			}
 
-			Color tempColor = Color.white;
 			if(crosshairBehindPlayer)
 			{
 				tempColor.a = opacityLevelWhenBehindPlayer;
