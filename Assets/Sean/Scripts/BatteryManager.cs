@@ -11,7 +11,8 @@ public class BatteryManager : MonoBehaviour {
 
 	private float batteryPercentage = 100f; //Will be removed after implementation of game
 
-	public PlayerBattery playerBattery; //Add player battery script here
+	public newPlayerBat playerBattery; //Add player battery script here
+	//private newPlayerBat playerBattery;
 
 	private float currentBattery;
 	private float maxBattery;
@@ -27,6 +28,7 @@ public class BatteryManager : MonoBehaviour {
 
 		//UpdateHealth (19); //Will be removed upon implementation;
 		maxBattery = playerBattery.maxBattery;
+
 
 	}
 

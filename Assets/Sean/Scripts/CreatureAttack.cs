@@ -9,7 +9,7 @@ public class CreatureAttack : MonoBehaviour {
 	public ParticleSystem PartSys;
 
 	private GameObject player;
-	private PlayerBattery playerBattery;
+	private newPlayerBat playerBattery;
 //	private CreatureHealth enemyHealth;
 	private bool playerInRange;
 	private float timer;
@@ -22,7 +22,7 @@ public class CreatureAttack : MonoBehaviour {
 	void Awake ()
 	{
 		player = GameObject.FindGameObjectWithTag ("Player");
-		playerBattery = player.GetComponent <PlayerBattery> ();
+		playerBattery = player.GetComponent <newPlayerBat> ();
 
 		childRenderers = GetComponentsInChildren<Renderer> ();
 		NavMesh = GetComponent<NavMeshAgent> ();
