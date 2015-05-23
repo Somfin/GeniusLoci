@@ -35,8 +35,6 @@ public class TriggerHeightChange : TriggerBase
 				moving = false;
 				TriggerChildren();
 			}
-
-			//TODO(Adriant): Handle collision with player.
 		}
 	}
 }
