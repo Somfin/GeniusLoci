@@ -62,13 +62,12 @@ public class NewBurner : MonoBehaviour {
 			tempSize = minSize + (sizeRange * (playerMover.currentJump / playerMover.jumpRate));
 			partSys.startSize = tempSize;
 		} else {
-			partSys.startSpeed = minSpeed;
-			partSys.startSize = minSize;
+			partSys.Stop ();
 		}
 
 		setRotation ();
 	
-		if (playerMover.jumping && (playerMover.jumpHold || (!(Mathf.Approximately (0f, h) && Mathf.Approximately (0f, v))))) {
+		if (playerMover.jumping && playerMover.jumpHold) {
 
 			if(partSys.isStopped)
 				transform.rotation = toRotation;
