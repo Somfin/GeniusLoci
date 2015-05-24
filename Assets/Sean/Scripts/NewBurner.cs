@@ -70,7 +70,10 @@ public class NewBurner : MonoBehaviour {
 	
 		if (playerMover.jumping && (playerMover.jumpHold || (!(Mathf.Approximately (0f, h) && Mathf.Approximately (0f, v))))) {
 
-			transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+			if(partSys.isStopped)
+				transform.rotation = toRotation;
+			else
+				transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
 			
 			if (partSys.isStopped)
 				partSys.Play ();
