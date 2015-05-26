@@ -25,7 +25,7 @@ public class CameraControl : MonoBehaviour {
 		if (Physics.Raycast (player.transform.position, (pos - player.transform.position), out found, dist)) {
 			if (found.collider.tag != "Trigger"){
 				Debug.DrawLine (player.transform.position, pos, Color.red);
-				pos = new Vector3 (found.point.x, pos.y, found.point.z);
+				pos = new Vector3 (found.point.x, found.point.y, found.point.z);
 			}
 		} else {
 			Debug.DrawLine (player.transform.position, pos, Color.white);
