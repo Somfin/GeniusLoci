@@ -61,7 +61,9 @@ public class ShootCableAtMouse : MonoBehaviour {
 
 			GameObject newBullet = GameObject.Instantiate (bullet, transform.position, transform.rotation) as GameObject;
 			currentBullet = newBullet;
-			Physics.IgnoreCollision (GetComponent<Collider>(), currentBullet.GetComponent<Collider>());
+			foreach (Collider c in GetComponents<Collider>()){
+				Physics.IgnoreCollision (c, currentBullet.GetComponent<Collider>());
+			}
 
 			currentBullet.GetComponent<BulletCollide>().setCreator(gameObject);
 
