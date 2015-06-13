@@ -33,6 +33,7 @@ public class PlayerPuller : MonoBehaviour
 				this.target = null;
 				GetComponent<Rigidbody> ().useGravity = true;
 				GetComponent<PlayerMover> ().enabled = true;
+				GetComponent<PlayerMover> ().currentJump = 0;
 				GetComponent<ShootCableAtMouse> ().enabled = true;
 				GetComponent<RotateToMouse> ().enabled = true;
 			}
