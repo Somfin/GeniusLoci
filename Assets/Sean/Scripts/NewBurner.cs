@@ -38,7 +38,10 @@ public class NewBurner : MonoBehaviour {
 
 		partSys = gameObject.GetComponent<ParticleSystem> ();
 		playerMover = player.GetComponent<PlayerMover> ();
-		partSys.Stop ();
+
+		partSys.enableEmission = false;
+		partSys.Play ();
+		//partSys.Stop ();
 
 		speedRange = maxSpeed - minSpeed;
 		sizeRange = maxSize - minSize;
@@ -62,24 +65,30 @@ public class NewBurner : MonoBehaviour {
 			tempSize = minSize + (sizeRange * (playerMover.currentJump / playerMover.jumpRate));
 			partSys.startSize = tempSize;
 		} else {
-			partSys.Stop ();
+			//partSys.Stop ();
+			partSys.enableEmission = false;
 		}
 
 		setRotation ();
 	
 		if (playerMover.jumping && playerMover.jumpHold) {
 
-			if(partSys.isStopped)
+			//if(partSys.isStopped)
+			if(!partSys.enableEmission) //No emission
 				transform.rotation = toRotation;
 			else
 				transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
 			
-			if (partSys.isStopped)
-				partSys.Play ();
+			//if (partSys.isStopped)
+				//partSys.Play ();
+
+			//if (!partSys.enableEmission)
+			partSys.enableEmission = true;
 
 		} else {
-			partSys.Stop ();
-			partSys.Clear();
+			//partSys.Stop ();
+			//partSys.Clear();
+			partSys.enableEmission = false;
 		}
 
 	}
