@@ -109,8 +109,8 @@ public class NewBurner : MonoBehaviour {
 
 			//jetPackLight.intensity = partSys.particleCount/5;
 
-			if(!playerMover.jumpHold)
-				jetPackLight.intensity = jetPackLight.intensity * (partSys.particleCount/80);
+			if(!playerMover.jumpHold)//This is some evil code, but basically this fades the light based on the number of particles
+				jetPackLight.intensity = jetPackLight.intensity * (partSys.particleCount/40); //once the jump is no being pressed
 			else
 				jetPackLight.intensity = minLightIntensity + (lightRange *  (playerMover.currentJump / playerMover.jumpRate));
 
