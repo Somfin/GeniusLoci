@@ -31,6 +31,13 @@ public class NewBurner : MonoBehaviour {
 
 	private Vector3 targetPoint;
 
+
+	//Light stuff below
+	private Light jetPackLight;
+	public float maxLightIntensity = 5f;
+	public float minLightIntensity = 1f;
+
+
 	void Start () {
 		
 		player = GameObject.FindGameObjectWithTag ("Player");
@@ -39,9 +46,13 @@ public class NewBurner : MonoBehaviour {
 		partSys = gameObject.GetComponent<ParticleSystem> ();
 		playerMover = player.GetComponent<PlayerMover> ();
 
+
+		jetPackLight = GetComponent<Light> ();
+		jetPackLight.enabled = false;
+
+
 		partSys.enableEmission = false;
 		partSys.Play ();
-		//partSys.Stop ();
 
 		speedRange = maxSpeed - minSpeed;
 		sizeRange = maxSize - minSize;
@@ -65,7 +76,6 @@ public class NewBurner : MonoBehaviour {
 			tempSize = minSize + (sizeRange * (playerMover.currentJump / playerMover.jumpRate));
 			partSys.startSize = tempSize;
 		} else {
-			//partSys.Stop ();
 			partSys.enableEmission = false;
 		}
 
@@ -73,26 +83,45 @@ public class NewBurner : MonoBehaviour {
 	
 		if (playerMover.jumping && playerMover.jumpHold) {
 
-			//if(partSys.isStopped)
 			if(!partSys.enableEmission) //No emission
 				transform.rotation = toRotation;
 			else
 				transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
-			
-			//if (partSys.isStopped)
-				//partSys.Play ();
 
-			//if (!partSys.enableEmission)
-			partSys.enableEmission = true;
+			if(playerMover.currentJump > 1)
+				partSys.enableEmission = true;
 
 		} else {
-			//partSys.Stop ();
-			//partSys.Clear();
 			partSys.enableEmission = false;
 		}
 
+		AddLight ();
+
 	}
 	
+	void AddLight()
+	{
+		float lightRange = maxLightIntensity - minLightIntensity;
+		//jetPackLight.intensity = minLightIntensity + (lightRange * (playerMover.currentJump / playerMover.jumpRate));
+
+		//if(partSys.
+		if (partSys.particleCount > 0) {
+
+			//jetPackLight.intensity = partSys.particleCount/5;
+
+			if(!playerMover.jumpHold)
+				jetPackLight.intensity = jetPackLight.intensity * (partSys.particleCount/80);
+			else
+				jetPackLight.intensity = minLightIntensity + (lightRange *  (playerMover.currentJump / playerMover.jumpRate));
+
+			if (!jetPackLight.enabled)
+				jetPackLight.enabled = true;
+
+		} else
+			jetPackLight.enabled = false;
+
+	}
+
 
 	void setRotation() {
 
@@ -102,9 +131,14 @@ public class NewBurner : MonoBehaviour {
 			rotation.y = -50f;
 
 
-		rotation.x = h * -100f;
+		//rotation.x = h * -100f;
+		rotation.x = h * -50f;
 
-		rotation.z = v * -100f;
+		//rotation.z = v * -100f;
+		rotation.z = v * -50f;
+
+		if (rotation.z > 0) //Preventing jetpack from hitting player
+			rotation.z = 0;
 
 		targetPoint = player.transform.TransformPoint (rotation);
 
