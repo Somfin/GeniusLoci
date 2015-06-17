@@ -5,6 +5,7 @@ public class PlayerPuller : MonoBehaviour
 {
 	private Rigidbody body;
 	public bool pulling;
+	public LineRenderer cable;
 	private GameObject target;
 
 	// Use this for initialization
@@ -24,9 +25,13 @@ public class PlayerPuller : MonoBehaviour
 			if (GetComponent<PlayerMover> ().isActiveAndEnabled){
 				GetComponent<Rigidbody> ().useGravity = false;
 				GetComponent<PlayerMover> ().enabled = false;
+				GetComponent<ShootCableAtMouse> ().bulletHit ();
 				GetComponent<ShootCableAtMouse> ().enabled = false;
 				GetComponent<RotateToMouse> ().enabled = false;
 			}
+			cable.enabled = true;
+			cable.SetPosition (0, transform.position);
+			cable.SetPosition (1, target.transform.position);
 			body.MovePosition (Vector3.MoveTowards (transform.position, target.transform.position, 1));
 			if (Vector3.Distance (transform.position, target.transform.position) < 3){
 				pulling = false;
@@ -36,6 +41,7 @@ public class PlayerPuller : MonoBehaviour
 				GetComponent<PlayerMover> ().currentJump = 0;
 				GetComponent<ShootCableAtMouse> ().enabled = true;
 				GetComponent<RotateToMouse> ().enabled = true;
+				cable.enabled = false;
 			}
 		}
 	}

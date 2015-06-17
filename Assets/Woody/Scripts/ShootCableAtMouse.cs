@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ShootCableAtMouse : MonoBehaviour {
 	public GameObject bullet;
-	public GameObject cable;
+	public LineRenderer cable;
 	public GameObject backBlast;
 	public float shotSpeed;
 	public float shotDelay;
@@ -14,6 +14,7 @@ public class ShootCableAtMouse : MonoBehaviour {
 	private bool trigger;
 	private bool firing;
 	private bool fired;
+	private bool bulletLive;
 	private GameObject currentBullet;
 
 	// Use this for initialization
@@ -21,6 +22,7 @@ public class ShootCableAtMouse : MonoBehaviour {
 		firing = false;
 		fired = false;
 		currentBullet = null;
+		cable.useWorldSpace = true;
 	}
 	
 	// Update is called once per frame
@@ -43,19 +45,25 @@ public class ShootCableAtMouse : MonoBehaviour {
 				currentCooldown = 0;
 			}
 		}
-		if (currentBullet != null){
-			Debug.DrawLine (gameObject.transform.position, currentBullet.transform.position, Color.black);
+		if (currentBullet != null && bulletLive) {
+			cable.enabled = true;
+			cable.SetPosition (0, this.transform.position);
+			cable.SetPosition (1, currentBullet.transform.position);
+		} else {
+			cable.enabled = false;
 		}
 	}
 
 	void FixedUpdate () {
 		if (firing && !fired && currentBullet != null) {
 			currentBullet.GetComponent<BulletKill>().die ();
+			bulletLive = false;
 			currentBullet = null;
 		}
 		if (firing && !fired) {
 			firing = false;
 			fired = true;
+			bulletLive = true;
 			GameObject blast = GameObject.Instantiate (backBlast, transform.position, transform.rotation) as GameObject;
 			Destroy (blast, 2.0f);
 
@@ -70,6 +78,10 @@ public class ShootCableAtMouse : MonoBehaviour {
 			currentBullet.GetComponent<Rigidbody>().AddForce (this.transform.forward * shotSpeed);
 			currentBullet.name = "Active Spark";
 		}
+	}
+
+	public void bulletHit(){
+		bulletLive = false;
 	}
 
 	void OnGUI() {
