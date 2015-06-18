@@ -5,6 +5,7 @@ public class PlayerMover : MonoBehaviour {
 	public float moveRate;
 	public float jumpRate;
 	public float jumpDecay;
+	public Animator anim;
 
 	private Vector3 stick;
 	private Vector3 move;
@@ -36,6 +37,11 @@ public class PlayerMover : MonoBehaviour {
 	void FixedUpdate (){
 		stick.Set (stickX, 0f, stickY);
 		stick = stick.normalized;
+		if (stick.magnitude > 0.2f) {
+			anim.SetBool ("IsRunning", true);
+		} else {
+			anim.SetBool ("IsRunning", false);
+		}
 		Move (stick.x, stick.z);
 	}
 
