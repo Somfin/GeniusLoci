@@ -37,11 +37,8 @@ public class PlayerMover : MonoBehaviour {
 	void FixedUpdate (){
 		stick.Set (stickX, 0f, stickY);
 		stick = stick.normalized;
-		if (stick.magnitude > 0.2f) {
-			anim.SetBool ("IsRunning", true);
-		} else {
-			anim.SetBool ("IsRunning", false);
-		}
+		anim.SetFloat ("Run_Vert", stickY);
+		anim.SetFloat ("Run_Horiz", stickX);
 		Move (stick.x, stick.z);
 	}
 
@@ -49,6 +46,7 @@ public class PlayerMover : MonoBehaviour {
 		move.Set (h, 0f, v);
 		move = move.normalized * moveRate * Time.deltaTime;
 		body.useGravity = true;
+		anim.SetBool ("IsJumping", false);
 		if (jumpHold && !jumping && !jumped) {
 			jumping = true;
 		}
@@ -58,6 +56,7 @@ public class PlayerMover : MonoBehaviour {
 			jumpTime = 0;
 		}
 		if (jumpHold && currentJump > 1) {
+			anim.SetBool ("IsJumping", true);
 			jumped = true;
 			body.useGravity = false;
 			jumpTime += Time.deltaTime;

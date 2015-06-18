@@ -7,6 +7,7 @@ public class ShootCableAtMouse : MonoBehaviour {
 	public float shotSpeed;
 	public float shotDelay;
 	public float shotCooldown;
+	public Animator anim;
 	
 	private float currentCooldown;
 	private float currentDelay;
@@ -28,6 +29,7 @@ public class ShootCableAtMouse : MonoBehaviour {
 			trigger = true;
 		} 
 		if (trigger && currentCooldown == 0) {
+			anim.SetBool ("IsShooting", true);
 			currentDelay += Time.deltaTime;
 			if (currentDelay > shotDelay){
 				trigger = false;
@@ -36,6 +38,7 @@ public class ShootCableAtMouse : MonoBehaviour {
 			}
 		}
 		if (fired) {
+			anim.SetBool ("IsShooting", false);
 			currentCooldown += Time.deltaTime;
 			if (currentCooldown > shotCooldown){
 				fired = false;
