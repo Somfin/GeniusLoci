@@ -13,6 +13,9 @@ public class NewBurner : MonoBehaviour {
 
 	public float maxSize = 2f;
 	public float minSize = .7f;
+	
+	public float maxVol = .2f;
+	public float minVol = 0f;
 
 	private float tempSpeed;
 	private float tempSize;
@@ -31,6 +34,8 @@ public class NewBurner : MonoBehaviour {
 
 	private Vector3 targetPoint;
 
+	//Added by Woody, to make the sound happen
+	private AudioSource sound;
 
 	//Light stuff below
 	private Light jetPackLight;
@@ -45,6 +50,7 @@ public class NewBurner : MonoBehaviour {
 
 		partSys = gameObject.GetComponent<ParticleSystem> ();
 		playerMover = player.GetComponent<PlayerMover> ();
+		sound = GetComponent<AudioSource> ();
 
 
 		jetPackLight = GetComponent<Light> ();
@@ -75,6 +81,7 @@ public class NewBurner : MonoBehaviour {
 
 			tempSize = minSize + (sizeRange * (playerMover.currentJump / playerMover.jumpRate));
 			partSys.startSize = tempSize;
+
 		} else {
 			partSys.enableEmission = false;
 		}
@@ -83,19 +90,22 @@ public class NewBurner : MonoBehaviour {
 	
 		if (playerMover.jumping && playerMover.jumpHold) {
 
-			if(!partSys.enableEmission) //No emission
+			if (!partSys.enableEmission) //No emission
 				transform.rotation = toRotation;
 			else
-				transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+				transform.rotation = Quaternion.RotateTowards (transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
 
-			if(playerMover.currentJump > 1)
+			if (playerMover.currentJump > 1){
 				partSys.enableEmission = true;
+			}
 
 		} else {
 			partSys.enableEmission = false;
 		}
 
 		AddLight ();
+
+		AddAudio ();
 
 	}
 	
@@ -121,7 +131,28 @@ public class NewBurner : MonoBehaviour {
 			jetPackLight.enabled = false;
 
 	}
+	
+	void AddAudio()
+	{
+		float volRange = maxVol - minVol;
 
+		if (partSys.particleCount > 0) {
+			
+			if(!playerMover.jumpHold)//This is some evil code, but basically this fades the light based on the number of particles
+				sound.volume = minVol * (partSys.particleCount/40); //once the jump is no being pressed
+			else
+				sound.volume = minVol + (volRange *  (playerMover.currentJump / playerMover.jumpRate));
+			
+			if (!sound.isPlaying){
+				sound.pitch = 1f + Random.Range (0f, 0.2f);
+				sound.time = 2.5f + Random.Range (-1f, 1f);
+				sound.Play ();
+			}
+			
+		} else
+			sound.Pause ();
+		
+	}
 
 	void setRotation() {
 
