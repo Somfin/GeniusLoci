@@ -25,23 +25,24 @@ public class PlayerPuller : MonoBehaviour
 			if (GetComponent<PlayerMover> ().isActiveAndEnabled){
 				GetComponent<Rigidbody> ().useGravity = false;
 				GetComponent<PlayerMover> ().enabled = false;
-				GetComponent<ShootCableAtMouse> ().bulletHit ();
 				GetComponent<ShootCableAtMouse> ().enabled = false;
 				GetComponent<RotateToMouse> ().enabled = false;
 			}
 			cable.enabled = true;
-			cable.SetPosition (0, transform.position);
-			cable.SetPosition (1, target.transform.position);
+			cable.SetVertexCount (2);
+			cable.SetPosition (0, target.transform.position);
+			cable.SetPosition (1, gameObject.transform.position);
 			body.MovePosition (Vector3.MoveTowards (transform.position, target.transform.position, 1));
 			if (Vector3.Distance (transform.position, target.transform.position) < 3){
 				pulling = false;
 				this.target = null;
 				GetComponent<Rigidbody> ().useGravity = true;
+				GetComponent<Rigidbody> ().velocity = Vector3.zero;
 				GetComponent<PlayerMover> ().enabled = true;
 				GetComponent<PlayerMover> ().currentJump = 0;
 				GetComponent<ShootCableAtMouse> ().enabled = true;
 				GetComponent<RotateToMouse> ().enabled = true;
-				cable.enabled = false;
+				cable.SetVertexCount (0);
 			}
 		}
 	}
@@ -56,6 +57,7 @@ public class PlayerPuller : MonoBehaviour
 			pulling = false;
 			this.target = null;
 			GetComponent<Rigidbody> ().useGravity = true;
+			GetComponent<Rigidbody> ().velocity = Vector3.zero;
 			GetComponent<PlayerMover> ().enabled = true;
 			GetComponent<ShootCableAtMouse> ().enabled = true;
 			GetComponent<RotateToMouse> ().enabled = true;

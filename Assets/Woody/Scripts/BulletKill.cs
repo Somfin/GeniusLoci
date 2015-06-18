@@ -21,6 +21,7 @@ public class BulletKill : MonoBehaviour {
 		GetComponent<Light> ().enabled = false;
 
 		GetComponent<BulletCollide> ().enabled = false;
+		GetComponent<BulletCable> ().kill();
 
 		Destroy (bullet);
 		particles.GetComponent<ParticleSystem>().Stop();

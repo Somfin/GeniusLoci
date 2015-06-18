@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SlowSpin : MonoBehaviour {
+public class ConstantSpin : MonoBehaviour {
 	public float turnRate;
 
 	// Use this for initialization

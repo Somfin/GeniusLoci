@@ -3,7 +3,6 @@ using System.Collections;
 
 public class ShootCableAtMouse : MonoBehaviour {
 	public GameObject bullet;
-	public LineRenderer cable;
 	public GameObject backBlast;
 	public float shotSpeed;
 	public float shotDelay;
@@ -14,15 +13,13 @@ public class ShootCableAtMouse : MonoBehaviour {
 	private bool trigger;
 	private bool firing;
 	private bool fired;
-	private bool bulletLive;
-	private GameObject currentBullet;
+	public GameObject currentBullet;
 
 	// Use this for initialization
 	void Start () {
 		firing = false;
 		fired = false;
 		currentBullet = null;
-		cable.useWorldSpace = true;
 	}
 	
 	// Update is called once per frame
@@ -45,25 +42,15 @@ public class ShootCableAtMouse : MonoBehaviour {
 				currentCooldown = 0;
 			}
 		}
-		if (currentBullet != null && bulletLive) {
-			cable.enabled = true;
-			cable.SetPosition (0, this.transform.position);
-			cable.SetPosition (1, currentBullet.transform.position);
-		} else {
-			cable.enabled = false;
-		}
 	}
 
 	void FixedUpdate () {
-		if (firing && !fired && currentBullet != null) {
-			currentBullet.GetComponent<BulletKill>().die ();
-			bulletLive = false;
-			currentBullet = null;
-		}
 		if (firing && !fired) {
+			if (currentBullet != null){
+				currentBullet.GetComponent<BulletKill>().die();
+			}
 			firing = false;
 			fired = true;
-			bulletLive = true;
 			GameObject blast = GameObject.Instantiate (backBlast, transform.position, transform.rotation) as GameObject;
 			Destroy (blast, 2.0f);
 
@@ -74,14 +61,12 @@ public class ShootCableAtMouse : MonoBehaviour {
 			}
 
 			currentBullet.GetComponent<BulletCollide>().setCreator(gameObject);
+			GetComponent<LineRenderer>().enabled = true;
+			currentBullet.GetComponent<BulletCable>().setCable(GetComponent<LineRenderer>());
 
 			currentBullet.GetComponent<Rigidbody>().AddForce (this.transform.forward * shotSpeed);
 			currentBullet.name = "Active Spark";
 		}
-	}
-
-	public void bulletHit(){
-		bulletLive = false;
 	}
 
 	void OnGUI() {

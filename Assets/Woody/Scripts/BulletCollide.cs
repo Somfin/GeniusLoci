@@ -24,13 +24,15 @@ public class BulletCollide : MonoBehaviour {
 			other.GetComponent<CreatureHealth> ().takeDamage (1);
 			GetComponent<BulletKill> ().die ();
 		} else if (other.tag == "Pull" && active) {
-			GetComponent<BulletKill> ().die ();
 			creator.GetComponent<PlayerPuller> ().pullTo(other.gameObject);
+			other.GetComponentInChildren<PullHit> ().spinUp ();
+			GetComponent<BulletKill> ().die ();
 		}
 		Physics.IgnoreCollision (GetComponent<Collider> (), other);
 	}
 
 	public void setCreator(GameObject obj){
 		creator = obj;
+		GetComponent<BulletCable> ().setOrigin (obj);
 	}
 }
