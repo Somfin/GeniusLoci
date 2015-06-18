@@ -25,7 +25,9 @@ public class BulletCollide : MonoBehaviour {
 			GetComponent<BulletKill> ().die ();
 		} else if (other.tag == "Pull" && active) {
 			creator.GetComponent<PlayerPuller> ().pullTo(other.gameObject);
-			other.GetComponentInChildren<PullHit> ().spinUp ();
+			if (other.GetComponentInChildren<PullHit> () != null){
+				other.GetComponentInChildren<PullHit> ().spinUp ();
+			}
 			GetComponent<BulletKill> ().die ();
 		}
 		Physics.IgnoreCollision (GetComponent<Collider> (), other);

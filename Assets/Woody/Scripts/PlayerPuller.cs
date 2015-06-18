@@ -37,9 +37,8 @@ public class PlayerPuller : MonoBehaviour
 				pulling = false;
 				this.target = null;
 				GetComponent<Rigidbody> ().useGravity = true;
-				GetComponent<Rigidbody> ().velocity = Vector3.zero;
 				GetComponent<PlayerMover> ().enabled = true;
-				GetComponent<PlayerMover> ().currentJump = 0;
+				GetComponent<PlayerMover> ().currentJump = 0.5f;
 				GetComponent<ShootCableAtMouse> ().enabled = true;
 				GetComponent<RotateToMouse> ().enabled = true;
 				cable.SetVertexCount (0);
@@ -57,8 +56,8 @@ public class PlayerPuller : MonoBehaviour
 			pulling = false;
 			this.target = null;
 			GetComponent<Rigidbody> ().useGravity = true;
-			GetComponent<Rigidbody> ().velocity = Vector3.zero;
 			GetComponent<PlayerMover> ().enabled = true;
+			GetComponent<PlayerMover> ().currentJump = 0.5f;
 			GetComponent<ShootCableAtMouse> ().enabled = true;
 			GetComponent<RotateToMouse> ().enabled = true;
 		}
