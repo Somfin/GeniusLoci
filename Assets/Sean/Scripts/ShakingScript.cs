@@ -15,8 +15,15 @@ public class ShakingScript : MonoBehaviour {
 
 	public float whenToStartShake = 0f; //This is a decimal representing at what point in motion the object shakes
 
+	public bool shakesCamera = false;
+	public float whenToShakeCamera = .8f;
+	//public float cameraShakeTime = 1f;
+	public float cameraShakeAmount = 1f;
+	private bool cameraTriggered = false;
+
 
 	private TriggerShift heightScript;
+	private CameraShake camScript;
 
 
 	void OnEnable()
@@ -24,6 +31,7 @@ public class ShakingScript : MonoBehaviour {
 		//originalPos = objectTransform.localPosition;
 
 		heightScript = GetComponent<TriggerShift> ();
+		camScript = Camera.main.GetComponent<CameraShake> ();
 	}
 
 	void LateUpdate()
@@ -38,6 +46,24 @@ public class ShakingScript : MonoBehaviour {
 			}
 			else {
 				shakeTime = 0f;
+			}
+		}
+		if (heightScript.moving) {
+			if (shakesCamera)
+				ShakeCamera ();
+		}
+	}
+
+	void ShakeCamera(){
+
+		if (!cameraTriggered) {
+
+			if (heightScript.percentCovered > whenToShakeCamera) {
+
+				//camScript.shake = cameraShakeTime;
+				camScript.shakeAmount += cameraShakeAmount;
+
+				cameraTriggered = true;
 			}
 		}
 	}
