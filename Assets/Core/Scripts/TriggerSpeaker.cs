@@ -2,15 +2,31 @@
 using System.Collections;
 
 [RequireComponent (typeof (AudioSource))]
-public class TriggerSpeaker : MonoBehaviour {
+public class TriggerSpeaker : TriggerBase {
 
-	// Use this for initialization
-	void Start () {
-	
+	public AudioClip sound;
+
+	private bool playing = false;
+	private float startTime;
+	private bool triggered = false;
+
+	public override void Activate()
+	{
+		if (!playing)
+		{
+			this.GetComponent<AudioSource>().clip = sound;			
+			this.GetComponent<AudioSource>().Play();
+			playing = true;
+			startTime = Time.time;
+		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	void Update ()
+	{
+		if(!triggered && playing){
+			if((Time.time - startTime) > sound.length){
+				TriggerChildren();
+			}
+		}
 	}
 }
