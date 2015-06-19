@@ -7,6 +7,7 @@ public class PullHit : MonoBehaviour {
 	public float maxRange;
 	public Light flare;
 	public ConstantSpin spin;
+	public AudioSource sound;
 	private float currentSpin;
 	private float baseSpin;
 	private float currentIntensity;
@@ -38,5 +39,7 @@ public class PullHit : MonoBehaviour {
 		spin.turnRate = maxSpin;
 		flare.intensity = maxIntensity;
 		flare.range = maxRange;
+		sound.Stop ();
+		sound.Play ();
 	}
 }
