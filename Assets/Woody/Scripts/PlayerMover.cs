@@ -5,8 +5,12 @@ public class PlayerMover : MonoBehaviour {
 	public float moveRate;
 	public float jumpRate;
 	public float jumpDecay;
+	public float currentJump;
 	public Animator anim;
+	public float stepFinder;
+	public AudioClip[] clips;
 
+	private AudioSource sound ;
 	private Vector3 stick;
 	private Vector3 move;
 	private float stickX;
@@ -16,7 +20,6 @@ public class PlayerMover : MonoBehaviour {
 	public bool jumping;		// Whether or not I am currently jumping
 	public bool jumpHold;		// Whether or not I am currently holding down the jump button
 	private float jumpTime;
-	public float currentJump;
 	private Rigidbody body;
 
 	// Use this for initialization
@@ -24,6 +27,7 @@ public class PlayerMover : MonoBehaviour {
 		stickX = 0f;
 		stickY = 0f;
 		body = GetComponent<Rigidbody> ();
+		sound = this.GetComponent<AudioSource> ();
 		currentJump = jumpRate;
 	}
 	
@@ -37,6 +41,19 @@ public class PlayerMover : MonoBehaviour {
 	void FixedUpdate (){
 		stick.Set (stickX, 0f, stickY);
 		stick = stick.normalized;
+		if (anim.GetBool ("Grounded") && !anim.GetBool ("IsShooting")) {
+			if (stick.magnitude > 0f) {
+				stepFinder += Time.deltaTime;
+				if (stepFinder > 0.416666666666f) {
+					stepFinder = 0;
+					Footstep ();
+				}
+			} else {
+				stepFinder = 0;
+			}
+		} else {
+			stepFinder = 0;
+		}
 		anim.SetFloat ("Run_Vert", stickY);
 		anim.SetFloat ("Run_Horiz", stickX);
 		Move (stick.x, stick.z);
@@ -74,9 +91,10 @@ public class PlayerMover : MonoBehaviour {
 		}
 	}
 
-	void OnCollisionExit(Collision collision){
-		if (collision.collider.tag == "World") {
-			jumping = true;
-		}
+	void Footstep(){
+		AudioClip clip = clips[Mathf.FloorToInt (Random.Range (0, clips.Length))];
+		sound.clip = clip;
+		sound.pitch = 1 + Random.Range (-0.1f, 0.1f);
+		sound.Play();
 	}
 }

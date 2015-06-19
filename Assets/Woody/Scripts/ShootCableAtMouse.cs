@@ -8,9 +8,9 @@ public class ShootCableAtMouse : MonoBehaviour {
 	public float shotDelay;
 	public float shotCooldown;
 	public Animator anim;
+	public float currentDelay;
 	
 	private float currentCooldown;
-	private float currentDelay;
 	private bool trigger;
 	private bool firing;
 	private bool fired;
