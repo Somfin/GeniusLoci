@@ -13,7 +13,7 @@ public class BulletCable : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		cable.SetVertexCount (2);
-		cable.SetPosition (0, origin.transform.position);
+		cable.SetPosition (0, origin.transform.position + new Vector3 (0, 0.5f));
 		cable.SetPosition (1, gameObject.transform.position);
 	}
 	

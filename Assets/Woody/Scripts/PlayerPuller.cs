@@ -31,7 +31,7 @@ public class PlayerPuller : MonoBehaviour
 			cable.enabled = true;
 			cable.SetVertexCount (2);
 			cable.SetPosition (0, target.transform.position);
-			cable.SetPosition (1, gameObject.transform.position);
+			cable.SetPosition (1, gameObject.transform.position + new Vector3(0, 0.5f));
 			body.MovePosition (Vector3.MoveTowards (transform.position, target.transform.position, 1));
 			if (Vector3.Distance (transform.position, target.transform.position) < 3){
 				pulling = false;

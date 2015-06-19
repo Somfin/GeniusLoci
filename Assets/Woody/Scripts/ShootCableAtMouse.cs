@@ -54,10 +54,10 @@ public class ShootCableAtMouse : MonoBehaviour {
 			}
 			firing = false;
 			fired = true;
-			GameObject blast = GameObject.Instantiate (backBlast, transform.position, transform.rotation) as GameObject;
+			GameObject blast = GameObject.Instantiate (backBlast, transform.position + transform.forward + new Vector3 (0f, 0.6f), transform.rotation) as GameObject;
 			Destroy (blast, 2.0f);
 
-			GameObject newBullet = GameObject.Instantiate (bullet, transform.position, transform.rotation) as GameObject;
+			GameObject newBullet = GameObject.Instantiate (bullet, transform.position + transform.forward + new Vector3 (0f, 0.6f), transform.rotation) as GameObject;
 			currentBullet = newBullet;
 			foreach (Collider c in GetComponents<Collider>()){
 				Physics.IgnoreCollision (c, currentBullet.GetComponent<Collider>());
