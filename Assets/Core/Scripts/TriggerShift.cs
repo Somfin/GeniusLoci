@@ -9,7 +9,10 @@ public class TriggerShift : TriggerBase
 	public float speed;
 	public float dampening = 0.05f;
 	
-	private bool moving = false;
+	public bool moving = false;
+
+	public float percentCovered = 0f;
+
 	private Vector3 start;
 	private Vector3 target;
 	private float startTime;
@@ -32,6 +35,9 @@ public class TriggerShift : TriggerBase
 		if (moving) {
 			float distCovered = (Time.time - startTime) * speed * dampening;
 			float fracJourney = distCovered / journeyLength;
+
+			percentCovered = fracJourney;
+
 			transform.position = Vector3.Lerp(start, target, fracJourney);
 			if(fracJourney >= 1){
 				moving = false;
