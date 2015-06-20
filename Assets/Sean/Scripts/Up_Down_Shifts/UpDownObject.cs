@@ -35,8 +35,7 @@ public class UpDownObject : MonoBehaviour {
 	
 		startTime = Time.time;
 
-		//journeyLength = 0;
-		startTime = Time.time;
+		journeyLength = 1f;
 	}
 	
 	// Update is called once per frame
