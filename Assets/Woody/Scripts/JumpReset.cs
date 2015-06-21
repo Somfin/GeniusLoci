@@ -19,21 +19,21 @@ public class JumpReset : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider collide){
-		if (!anim.GetBool ("Grounded")){
-			anim.SetBool ("Grounded", true);
-			sound.pitch = 1 + (Random.Range (-0.1f, 0.1f));
-			sound.Play();
-		}
 		contact = collide.name;
 		if (collide.tag == "World") {
+			if (!anim.GetBool ("Grounded")){
+				anim.SetBool ("Grounded", true);
+				sound.pitch = 1 + (Random.Range (-0.1f, 0.1f));
+				sound.Play();
+			}
 			mover.resetJump();
 		}
 	}
 
 	void OnTriggerStay(Collider collide){
-		anim.SetBool ("Grounded", true);
 		stay = collide.name;
 		if (collide.tag == "World") {
+			anim.SetBool ("Grounded", true);
 			mover.resetJump();
 		}
 	}
