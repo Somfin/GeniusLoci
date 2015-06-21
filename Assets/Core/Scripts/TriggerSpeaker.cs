@@ -11,14 +11,12 @@ public class TriggerSpeaker : TriggerBase {
 	private bool triggered = false;
 
 	public override void Activate()
-	{
-		if (!playing)
-		{
-			this.GetComponent<AudioSource>().clip = sound;			
-			this.GetComponent<AudioSource>().Play();
-			playing = true;
-			startTime = Time.time;
-		}
+	{		
+		this.GetComponent<AudioSource>().Stop();
+		this.GetComponent<AudioSource>().clip = sound;			
+		this.GetComponent<AudioSource>().Play();
+		playing = true;
+		startTime = Time.time;
 	}
 
 	void Update ()

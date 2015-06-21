@@ -5,7 +5,7 @@ public class DelayTrigger : TriggerBase {
 
 	public bool triggerOnce = true;
 	public bool resetOnTrigger = false;
-	public int delay = 0;
+	public float delay = 0;
 
 	private bool triggered = false;
 	private bool counting = false;
