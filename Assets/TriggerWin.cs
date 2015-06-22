@@ -3,6 +3,8 @@ using System.Collections;
 
 public class TriggerWin : TriggerBase {
 	public GameObject heart;
+	public Camera cam;
+	public GameObject anchor;
 
 	// Use this for initialization
 	void Start () {
@@ -16,5 +18,7 @@ public class TriggerWin : TriggerBase {
 
 	public override void Activate() {
 		GameObject.FindGameObjectWithTag ("Player").GetComponent<WinScript> ().Win (heart);
+		cam.GetComponent<CameraControl> ().anchor = anchor;
+		cam.GetComponent<CameraControl> ().lookTarget = heart;
 	}
 }

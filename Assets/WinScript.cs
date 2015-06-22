@@ -3,11 +3,13 @@ using System.Collections;
 
 public class WinScript : MonoBehaviour {
 	public float move;
+	public float speed;
 	public Animator anim;
 	public GameObject cameraAnchor;
 
 	private bool win;
 	private float moved;
+	public Vector3 winVector;
 
 	// Use this for initialization
 	void Start () {
@@ -15,17 +17,19 @@ public class WinScript : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		if (win && moved < move) {
-			Vector3 mover = transform.forward * Time.deltaTime;
-			transform.Translate (mover);
-			moved += mover.magnitude;
+			transform.Translate (new Vector3(0f, 0f, Time.deltaTime) * speed);
+			moved += Time.deltaTime;
 		}
 	}
 
 	public void Win (GameObject heart){
-		cameraAnchor.transform.position = new Vector3(cameraAnchor.transform.position.x, 0f, cameraAnchor.transform.position.z);
-		transform.LookAt (heart.transform);
+		winVector = heart.transform.position - transform.position;
+		winVector.y = 0;
+		transform.rotation = Quaternion.LookRotation (winVector);
+
+
 		GetComponent<PlayerMover> ().enabled = false;
 		GetComponent<RotateToMouse> ().enabled = false;
 		GetComponent<ShootCableAtMouse> ().enabled = false;
