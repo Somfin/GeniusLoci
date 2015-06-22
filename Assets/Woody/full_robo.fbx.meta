@@ -140,7 +140,7 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
-    motionNodeName: 
+    motionNodeName: <Root Transform>
     animationCompression: 0
     animationRotationError: .5
     animationPositionError: .5
@@ -291,7 +291,58 @@ ModelImporter:
       heightFromFeet: 0
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
+      curves:
+      - name: Lift
+        curve:
+          serializedVersion: 2
+          curve:
+          - time: .0130151808
+            value: -.406666964
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          - time: .136659428
+            value: .593333125
+            inSlope: -1.84762428e-06
+            outSlope: -1.84762428e-06
+            tangentMode: 0
+          - time: .262472898
+            value: -.406667262
+            inSlope: 1.3022472e-07
+            outSlope: 1.3022472e-07
+            tangentMode: 0
+          - time: .388286352
+            value: .593333125
+            inSlope: 2.06966888e-06
+            outSlope: 2.06966888e-06
+            tangentMode: 0
+          - time: .513015211
+            value: -.406666905
+            inSlope: 1.78701498e-07
+            outSlope: 1.78701498e-07
+            tangentMode: 0
+          - time: .637744069
+            value: .593333125
+            inSlope: -1.52134305e-06
+            outSlope: -1.52134305e-06
+            tangentMode: 0
+          - time: .763557494
+            value: -.406667143
+            inSlope: 1.36886058e-07
+            outSlope: 1.36886058e-07
+            tangentMode: 0
+          - time: .887201786
+            value: .593333244
+            inSlope: 1.7756463e-06
+            outSlope: 1.7756463e-06
+            tangentMode: 0
+          - time: 1.01301515
+            value: -.406666845
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          preInfinity: 0
+          postInfinity: 0
       events: []
       transformMask:
       - path: 
