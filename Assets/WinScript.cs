@@ -31,8 +31,10 @@ public class WinScript : MonoBehaviour {
 
 
 		GetComponent<PlayerMover> ().enabled = false;
+		GetComponent<Crosshair> ().enabled = false;
 		GetComponent<RotateToMouse> ().enabled = false;
 		GetComponent<ShootCableAtMouse> ().enabled = false;
+		Destroy(GameObject.FindGameObjectWithTag ("Crosshair"));
 		win = true;
 		anim.SetBool ("Win", true);
 	}
