@@ -8,6 +8,8 @@ public class TriggerCollision : TriggerBase
 	public bool hideMesh = true;
 	public bool triggerOnce = true;
 
+	public TriggerBase[] childrenOnExit = {};
+
 	private bool triggered = false;
 
 	void Start ()
@@ -34,6 +36,14 @@ public class TriggerCollision : TriggerBase
 	{
 		if (repeat)
 			Go (other);
+	}
+
+	void OnTriggerExit (Collider other)
+	{
+		foreach (TriggerBase child in childrenOnExit)
+		{
+			child.Activate();
+		}
 	}
 
 	void Go (Collider other)
