@@ -17,7 +17,7 @@ public class PullHit : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		baseSpin = spin.turnRate;
+		baseSpin = spin.yTurnRate;
 		baseIntensity = flare.intensity;
 		baseRange = flare.range;
 	}
@@ -27,16 +27,16 @@ public class PullHit : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
-		currentSpin = spin.turnRate;
+		currentSpin = spin.yTurnRate;
 		currentIntensity = flare.intensity;
 		currentRange = flare.range;
-		spin.turnRate = Mathf.Lerp (currentSpin, baseSpin, 0.01f); 
+		spin.yTurnRate = Mathf.Lerp (currentSpin, baseSpin, 0.01f); 
 		flare.intensity = Mathf.Lerp (currentIntensity, baseIntensity, 0.01f);
 		flare.range = Mathf.Lerp (currentRange, baseRange, 0.01f);
 	}
 
 	public void spinUp(){
-		spin.turnRate = maxSpin;
+		spin.yTurnRate = maxSpin;
 		flare.intensity = maxIntensity;
 		flare.range = maxRange;
 		sound.Stop ();
