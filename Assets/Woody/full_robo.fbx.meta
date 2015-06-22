@@ -130,6 +130,7 @@ ModelImporter:
     7400014: Land
     7400016: Air Shoot
     7400018: Land Shoot
+    7400020: Win
     9500000: //RootNode
     13700000: polySurface10
   materials:
@@ -1302,6 +1303,128 @@ ModelImporter:
       takeName: Take 001
       firstFrame: 220
       lastFrame: 230
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: polySurface10
+        weight: 1
+      - path: skeleton_group
+        weight: 1
+      - path: skeleton_group/Hip
+        weight: 1
+      - path: skeleton_group/Hip/back1
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/L_Clavical
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/L_Clavical/L_Collar
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/L_Clavical/L_Collar/L_Shoulder
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/L_Clavical/L_Collar/L_Shoulder/joint34
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/L_Clavical/L_Collar/L_Shoulder/joint34/L_Elbow
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/L_Clavical/L_Collar/L_Shoulder/joint34/L_Elbow/joint36
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/L_Clavical/L_Collar/L_Shoulder/joint34/L_Elbow/joint36/L_Wrist
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/L_Clavical/L_Collar/L_Shoulder/joint34/L_Elbow/joint36/L_Wrist/L_Hand
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/L_Clavical/L_Collar/L_Shoulder/joint34/L_Elbow/joint36/L_Wrist/L_Hand/joint17
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/L_Clavical/L_Collar/L_Shoulder/joint34/L_Elbow/joint36/L_Wrist/L_Hand/joint17/joint18
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/L_Clavical/L_Collar/L_Shoulder/joint34/L_Elbow/joint36/L_Wrist/L_Hand/joint17/joint18/joint19
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/L_Clavical/L_Collar/L_Shoulder/joint34/L_Elbow/joint36/L_Wrist/L_Hand/joint20
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/L_Clavical/L_Collar/L_Shoulder/joint34/L_Elbow/joint36/L_Wrist/L_Hand/joint20/joint21
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/L_Clavical/L_Collar/L_Shoulder/joint34/L_Elbow/joint36/L_Wrist/L_Hand/joint20/joint21/joint22
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/L_Clavical/L_Collar/L_Shoulder/joint34/L_Elbow/joint36/L_Wrist/L_Hand/joint24
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/L_Clavical/L_Collar/L_Shoulder/joint34/L_Elbow/joint36/L_Wrist/L_Hand/joint24/joint25
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/L_Clavical/L_Collar/L_Shoulder/joint34/L_Elbow/joint36/L_Wrist/L_Hand/joint24/joint25/joint26
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/neck
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/neck/head
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/neck/head/head__top
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/R_Clavical
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/R_Clavical/L_Collar1
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/R_Clavical/L_Collar1/L_Shoulder1
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/R_Clavical/L_Collar1/L_Shoulder1/joint31
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/R_Clavical/L_Collar1/L_Shoulder1/joint31/L_Elbow1
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/R_Clavical/L_Collar1/L_Shoulder1/joint31/L_Elbow1/joint32
+        weight: 1
+      - path: skeleton_group/Hip/back1/back2/back3/back4/back5/R_Clavical/L_Collar1/L_Shoulder1/joint31/L_Elbow1/joint32/L_Wrist1
+        weight: 1
+      - path: skeleton_group/Hip/joint1
+        weight: 1
+      - path: skeleton_group/Hip/joint1/joint2
+        weight: 1
+      - path: skeleton_group/Hip/joint1/joint2/joint3
+        weight: 1
+      - path: skeleton_group/Hip/joint1/joint2/pCylinder5
+        weight: 1
+      - path: skeleton_group/Hip/joint1/joint2/pCylinder5/pCylinder14
+        weight: 1
+      - path: skeleton_group/Hip/joint1/pCylinder3
+        weight: 1
+      - path: skeleton_group/Hip/joint27
+        weight: 1
+      - path: skeleton_group/Hip/joint27/joint28
+        weight: 1
+      - path: skeleton_group/Hip/joint27/joint28/joint29
+        weight: 1
+      - path: skeleton_group/Hip/joint27/joint28/pCylinder8
+        weight: 1
+      - path: skeleton_group/Hip/joint27/joint28/pCylinder8/pCylinder9
+        weight: 1
+      - path: skeleton_group/Hip/joint27/pCylinder7
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Win
+      takeName: Take 001
+      firstFrame: 250
+      lastFrame: 380
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
