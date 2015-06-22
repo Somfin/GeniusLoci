@@ -2,7 +2,9 @@
 using System.Collections;
 
 public class ConstantSpin : MonoBehaviour {
-	public float turnRate;
+	public float xTurnRate;
+	public float yTurnRate;
+	public float zTurnRate;
 
 	// Use this for initialization
 	void Start () {
@@ -11,6 +13,8 @@ public class ConstantSpin : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		gameObject.transform.Rotate (new Vector3 (0, turnRate * Time.deltaTime, 0));
+		gameObject.transform.Rotate (new Vector3 (xTurnRate * Time.deltaTime, 0f, 0f));
+		gameObject.transform.Rotate (new Vector3 (0f, yTurnRate * Time.deltaTime, 0f));
+		gameObject.transform.Rotate (new Vector3 (0f, 0f, zTurnRate * Time.deltaTime));
 	}
 }
