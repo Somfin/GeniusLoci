@@ -95,7 +95,7 @@ public class NewBurner : MonoBehaviour {
 			else
 				transform.rotation = Quaternion.RotateTowards (transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
 
-			if (playerMover.currentJump > 1){
+			if (playerMover.currentJump > .5){
 				partSys.enableEmission = true;
 			}
 
