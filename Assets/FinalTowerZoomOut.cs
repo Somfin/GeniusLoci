@@ -21,10 +21,23 @@ public class FinalTowerZoomOut : MonoBehaviour {
 	private GameObject player;
 
 	private Vector3 lookAtStartPosition;
-	
+	//private GameObject crosshair;
+	private Crosshair crosshairScript;
+
+
+	private AudioSource backgroundMusic;
+	private AudioSource zoomMusic;
+
 	void Start () {
 	
 		player = GameObject.FindGameObjectWithTag ("Player");
+		//crosshair = GameObject.FindGameObjectWithTag ("Crosshair");
+		crosshairScript = player.GetComponent<Crosshair> ();
+
+		backgroundMusic = GameObject.FindGameObjectWithTag ("BackgroundMusic").GetComponent<AudioSource> ();
+		zoomMusic = GetComponent<AudioSource> ();
+
+			//player.GetComponentInParent<AudioSource> ();
 	}
 
 	void Update () {
@@ -48,8 +61,14 @@ public class FinalTowerZoomOut : MonoBehaviour {
 
 			Camera.main.GetComponent<CameraControl>().enabled = false;
 
+			crosshairScript.crosshairImage.enabled = false;
+
 			hasBeenTriggered = true;
 			startScene = true;
+
+			backgroundMusic.mute = true;
+			zoomMusic.Play();
+			zoomMusic.time = 3;
 
 			lookAtStartPosition = lookAtStart.transform.position;
 		}
@@ -76,7 +95,7 @@ public class FinalTowerZoomOut : MonoBehaviour {
 
 	IEnumerator EndSceneTimer(){
 
-		yield return new WaitForSeconds(6);
+		yield return new WaitForSeconds(8);
 
 		EndScene ();
 
@@ -91,7 +110,10 @@ public class FinalTowerZoomOut : MonoBehaviour {
 
 	void EndScene()
 	{
+		zoomMusic.volume = zoomMusic.volume/2f;
+		backgroundMusic.mute = false;
 
+		crosshairScript.crosshairImage.enabled = true;
 		Camera.main.GetComponent<CameraControl> ().enabled = true;
 
 
