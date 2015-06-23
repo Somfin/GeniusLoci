@@ -71,16 +71,4 @@ public class ShootCableAtMouse : MonoBehaviour {
 			currentBullet.name = "Active Spark";
 		}
 	}
-
-	void OnGUI() {
-		if (fired) {
-			GUI.Label (new Rect (0, 0, Screen.width, Screen.height), "...");
-		} else if (firing) {
-			GUI.Label (new Rect (0, 0, Screen.width, Screen.height), "BANG!");
-		} else if (trigger) {
-			GUI.Label (new Rect (0, 0, Screen.width, Screen.height), "Wait for it...");
-		} else {
-			GUI.Label (new Rect (0, 0, Screen.width, Screen.height), "Ready to fire.");
-		}
-	}
 }
