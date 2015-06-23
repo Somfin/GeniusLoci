@@ -37,7 +37,7 @@ public class TriggerShiftRewind : TriggerBase
 	
 	void Update ()
 	{
-		if (!done && journeyPosition > 0) {
+		if (!done && journeyPosition >= 0) {
 			transform.position = Vector3.Lerp(start, target, journeyPosition);
 
 			if(journeyPosition >= 1){
@@ -49,6 +49,9 @@ public class TriggerShiftRewind : TriggerBase
 
 			if(!done && (Time.time - startTime) > 0.05f){
 				journeyPosition-= 0.0001f * speedBack;
+				if(journeyPosition < 0){
+					journeyPosition = 0.0f;
+				}
 			}
 		}
 	}
