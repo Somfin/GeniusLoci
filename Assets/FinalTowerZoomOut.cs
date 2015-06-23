@@ -28,7 +28,7 @@ public class FinalTowerZoomOut : MonoBehaviour {
 	private AudioSource backgroundMusic;
 	private AudioSource zoomMusic;
 
-	bool changeSound = true;
+	public bool changeSound = true;
 
 	void Start () {
 	
