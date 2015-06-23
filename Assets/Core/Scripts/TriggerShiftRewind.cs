@@ -35,7 +35,7 @@ public class TriggerShiftRewind : TriggerBase
 	}
 	
 	
-	void Update ()
+	void FixedUpdate ()
 	{
 		if (!done && journeyPosition >= 0) {
 			transform.position = Vector3.Lerp(start, target, journeyPosition);

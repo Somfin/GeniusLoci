@@ -30,7 +30,7 @@ public class TriggerShift : TriggerBase
 	}
 	
 	
-	void Update ()
+	void FixedUpdate ()
 	{
 		if (moving) {
 			float distCovered = (Time.time - startTime) * speed * dampening;
