@@ -17,6 +17,7 @@ public class Crosshair : MonoBehaviour {
 	private Ray camRay;
 	private RaycastHit camHit;
 	private bool crosshairBehindPlayer = false;
+	private float grappleLength = 29;
 
 	void Start()
 	{
@@ -54,7 +55,7 @@ public class Crosshair : MonoBehaviour {
 				else
 					crosshairBehindPlayer = false;
 
-				if(camHit.collider.tag == "Pull")
+				if(camHit.collider.tag == "Pull" && hit.distance < grappleLength)
 					tempColor = Color.green;
 				else
 					tempColor = Color.white;
