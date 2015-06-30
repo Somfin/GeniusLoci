@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿//This is primarily Woody's code, but I changed a few lines
+using UnityEngine;
 using System.Collections;
 
 public class MyBulletCollide : MonoBehaviour {
